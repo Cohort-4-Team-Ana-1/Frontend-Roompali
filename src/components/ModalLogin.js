@@ -13,9 +13,28 @@ export const ModalLogin = () => {
         isOpen={modalLoginIsOpen}
         onRequestClose={() => setModalLoginIsOpen(false)}
       >
-        <h2>Modal Title Login</h2>
-        <p>Modal Body Login</p>
-        <div>
+        <div className="modal-body">
+          <h2>Welcome Again!</h2>
+          <form>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required=""
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="pass"
+                className="form-control"
+                placeholder="Password"
+                required=""
+              />
+            </div>
+            <input id="log_in" type="button" value="Log In" />
+          </form>
           <button onClick={() => setModalLoginIsOpen(false)}>Exit</button>
         </div>
       </Modal>

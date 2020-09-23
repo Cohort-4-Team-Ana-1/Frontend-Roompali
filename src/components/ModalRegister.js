@@ -13,9 +13,39 @@ export const ModalRegister = () => {
         isOpen={modalRegisterIsOpen}
         onRequestClose={() => setModalRegisterIsOpen(false)}
       >
-        <h2>Modal Title Register</h2>
-        <p>Modal Body Register</p>
-        <div>
+        <div className="modal-body">
+          <h2>
+            Sign UP at Roompali<span> For Free!</span>
+          </h2>
+          <form>
+            <div>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="First Name"
+                required=""
+              />
+            </div>
+            <div>
+              <input
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required=""
+              />
+            </div>
+            <div>
+              <input
+                type="password"
+                name="pass"
+                className="form-control"
+                placeholder="Password"
+                required=""
+              />
+            </div>
+            <input id="sign_up" type="button" value="Sign Up" />
+          </form>
           <button onClick={() => setModalRegisterIsOpen(false)}>Exit</button>
         </div>
       </Modal>
