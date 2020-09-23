@@ -15,6 +15,8 @@ $secondary-font: 'Capriola', 'sans serif';
 
 body {
     margin: 0;
+    display: grid;
+    grid-column: 1fr;
     font-family: $primary-font;
 }
 
@@ -29,6 +31,7 @@ body {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row: 1;
+        width: max-content;
         font-family: $secondary-font;
         color: $light-color;
     }
@@ -58,8 +61,9 @@ body {
 
 .content-section {
     display: grid;
-    grid-template-columns:7.5% 85% 7.5%;
-    grid-template-rows: 8% repeat(4,23%);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 100px;
     &__title {
         grid-column: 2;
         justify-self: center;
@@ -94,6 +98,9 @@ body {
 .footer {
     display: grid;
     grid-template-columns: 10% repeat(7, 1fr) 10%;
+    .icon:hover {
+        color: $high-light-color;
+    }
     .login {
         grid-column:6;
     }
@@ -123,6 +130,27 @@ body {
     .content-section {
         display: grid;
         grid-template-columns: 8% 42% 42% 8%;
+    }
+    .content-section__title {
+        grid-column: span 4;
+        justify-self: center;
+    }
+}
+@media (min-width: 1024px) {
+    .header .button {
+        grid-row: 2;
+        grid-column: 3;
+        width: 40%;
+        justify-self: flex-start;
+    }
+    .footer {
+        grid-row: 1;
+        align-items: flex-end;
+    }
+    .icon {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 }
 
