@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 225px 1fr;
   grid-template-rows: 100px 1fr 1fr;
-  background-image: url(./assets/interior-1519595__340.webp);
+  background: url(./assets/interior-1519595__340.webp);
 }
 .header__title {
   grid-column: 2;
@@ -65,6 +65,7 @@ body {
   grid-template-rows: 8% repeat(4, 23%);
   border-radius: 5px;
   margin-bottom: 20px;
+  padding-bottom: 25px;
   background-color: #EFF0F3;
 }
 .content-section .cards-container .card img {
@@ -77,10 +78,15 @@ body {
 .content-section .cards-container .card__body {
   grid-column: 2;
   grid-row: 4;
+  margin-top: 55px;
 }
 .content-section .cards-container .card__user {
   grid-column: 3;
   grid-row: 4;
+}
+.content-section .cards-container .card__user img {
+  border-radius: 50px;
+  border: 1px solid;
 }
 
 .footer {

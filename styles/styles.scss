@@ -24,7 +24,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 225px 1fr;
     grid-template-rows: 100px 1fr 1fr;
-    background-image: url(./assets/interior-1519595__340.webp);
+    background: url(./assets/interior-1519595__340.webp);
     &__title {
         grid-column: 2;
         font-family: $secondary-font;
@@ -76,6 +76,7 @@ body {
             grid-template-rows: 8% repeat(4, 23%);
             border-radius: 5px;
             margin-bottom: 20px;
+            padding-bottom: 25px;
             background-color: $card-background;
             img {
                 width: 100%;
@@ -87,14 +88,20 @@ body {
             &__body {
                 grid-column: 2;
                 grid-row: 4;
+                margin-top: 55px;
             }
             &__user {
                 grid-column: 3;
                 grid-row: 4;
+                img {
+                    border-radius: 50px;
+                    border: 1px solid;
+                }
+                }
             }
         }
-    }
 }
+
 .footer {
     display: grid;
     grid-template-columns: 10% repeat(7, 1fr) 10%;
