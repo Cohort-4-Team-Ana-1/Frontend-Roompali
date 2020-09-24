@@ -76,6 +76,7 @@ body {
             grid-template-rows: 8% repeat(4, 23%);
             border-radius: 5px;
             margin-bottom: 20px;
+            padding-bottom: 25px;
             background-color: $card-background;
             img {
                 width: 100%;
@@ -87,14 +88,20 @@ body {
             &__body {
                 grid-column: 2;
                 grid-row: 4;
+                margin-top: 55px;
             }
             &__user {
                 grid-column: 3;
                 grid-row: 4;
+                img {
+                    border-radius: 50px;
+                    border: 1px solid;
+                }
+                }
             }
         }
-    }
 }
+
 .footer {
     display: grid;
     grid-template-columns: 10% repeat(7, 1fr) 10%;

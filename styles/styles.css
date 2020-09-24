@@ -65,6 +65,7 @@ body {
   grid-template-rows: 8% repeat(4, 23%);
   border-radius: 5px;
   margin-bottom: 20px;
+  padding-bottom: 25px;
   background-color: #EFF0F3;
 }
 .content-section .cards-container .card img {
@@ -77,10 +78,15 @@ body {
 .content-section .cards-container .card__body {
   grid-column: 2;
   grid-row: 4;
+  margin-top: 55px;
 }
 .content-section .cards-container .card__user {
   grid-column: 3;
   grid-row: 4;
+}
+.content-section .cards-container .card__user img {
+  border-radius: 50px;
+  border: 1px solid;
 }
 
 .footer {
