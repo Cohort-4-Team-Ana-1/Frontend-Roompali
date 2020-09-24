@@ -17,9 +17,6 @@ export const NavBar = () => {
         <li>
           <Link to="/favorites">Favorites</Link>
         </li>
-        <li>
-          <Link to="/room-details">Room Details</Link>
-        </li>
       </ul>
     </nav>
   );

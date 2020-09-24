@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-export const ModalLogin = () => {
+export const ScreenLoginModal = () => {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
 
   return (
@@ -14,7 +14,7 @@ export const ModalLogin = () => {
         onRequestClose={() => setModalLoginIsOpen(false)}
       >
         <div className="modal-body">
-          <h2>Welcome Again!</h2>
+          <h1>Welcome Again!</h1>
           <form>
             <div>
               <input
