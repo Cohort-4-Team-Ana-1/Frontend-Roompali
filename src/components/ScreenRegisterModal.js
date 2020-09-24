@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-export const ModalRegister = () => {
+export const ScreenRegisterModal = () => {
   const [modalRegisterIsOpen, setModalRegisterIsOpen] = useState(false);
 
   return (
@@ -14,9 +14,9 @@ export const ModalRegister = () => {
         onRequestClose={() => setModalRegisterIsOpen(false)}
       >
         <div className="modal-body">
-          <h2>
+          <h1>
             Sign UP at Roompali<span> For Free!</span>
-          </h2>
+          </h1>
           <form>
             <div>
               <input
