@@ -11,7 +11,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 225px 1fr;
   grid-template-rows: 100px 1fr 1fr;
-  background-image: url(./assets/interior-1519595__340.webp);
+  background: url(./assets/interior-1519595__340.webp);
 }
 .header__title {
   grid-column: 2;

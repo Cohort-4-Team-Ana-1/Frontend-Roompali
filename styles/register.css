@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+body {
+  margin: 0;
+  display: grid;
+  background: #EFF0F3;
+  font-family: "Lato", "sans serif";
+}
+
+.header__icons {
+  display: grid;
+  grid-template-columns: 10% repeat(7, 1fr) 10%;
+  padding-top: 15px;
+  background: #FFFFFF;
+}
+.header__icons .icon {
+  padding-right: 5px;
+}
+.header__icons .icon:hover {
+  color: #FF8E3C;
+}
+.header__icons .login {
+  grid-column: 7;
+}
+.header__icons .user {
+  grid-column: 8;
+}
+.header__icons .fav {
+  grid-column: 9;
+}
+
+.register {
+  display: grid;
+  grid-row-gap: 30px;
+  background-color: #EFF0F3;
+}
+.register__header {
+  justify-self: center;
+}
+.register__text {
+  justify-self: center;
+}
+.register .button {
+  width: 200px;
+  justify-self: center;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: 700;
+  color: #0D0D0D;
+  background-color: #FF8E3C;
+}
+
+@media (min-width: 768px) and (min-width: 768px) {
+  .register {
+    background: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    justify-self: center;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+}
