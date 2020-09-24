@@ -62,7 +62,11 @@ body {
     }
     .cards-container {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        align-items: center;
+        justify-items: center;
+        grid-gap: 50px;
+        padding: 5%;
         .card {
             grid-row: auto;
             justify-self: center;
