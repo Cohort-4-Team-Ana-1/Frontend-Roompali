@@ -14,11 +14,7 @@ body {
   background-image: url(./assets/interior-1519595__340.webp);
 }
 .header__title {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row: 1;
-  width: -webkit-max-content;
-  width: max-content;
+  grid-column: 2;
   font-family: "Capriola", "sans serif";
   color: #FFFFFF;
 }
@@ -52,7 +48,11 @@ body {
 .content-section__title {
   justify-self: center;
 }
-.content-section .card {
+.content-section .cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.content-section .cards-container .card {
   grid-row: auto;
   justify-self: center;
   width: 300px;
@@ -63,18 +63,18 @@ body {
   margin-bottom: 20px;
   background-color: #EFF0F3;
 }
-.content-section .card img {
+.content-section .cards-container .card img {
   width: 100%;
   border-radius: 5px;
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row: 2;
 }
-.content-section .card__body {
+.content-section .cards-container .card__body {
   grid-column: 2;
   grid-row: 4;
 }
-.content-section .card__user {
+.content-section .cards-container .card__user {
   grid-column: 3;
   grid-row: 4;
 }
@@ -111,7 +111,6 @@ body {
   }
 
   .cards-container {
-    display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
