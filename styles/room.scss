@@ -1,0 +1,82 @@
+//Colors
+$dark-color: #0D0D0D;
+$light-color: #FFFFFF;
+$high-light-color: #FF8E3C;
+$high-light-variation: #D9376E;
+$card-background: #EFF0F3;
+
+//Fonts
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+
+$primary-font: 'Lato', 'sans serif';
+$secondary-font: 'Capriola', 'sans serif';
+
+
+body {
+    margin: 0;
+    display: grid;
+    font-family: $primary-font;
+}
+
+.header__icons {
+    display: grid;
+    grid-template-columns: 10% repeat(7, 1fr) 10%;
+    padding-top: 15px;
+    padding-right: 10px;
+    background: $light-color;
+    .icon {
+        padding-right: 5px;
+    }
+    .icon:hover {
+        color: $high-light-color;
+    }
+    .login {
+        grid-column:7;
+    }
+    .user {
+        grid-column: 8;
+    }
+    .fav {
+        grid-column:9;
+    }
+}
+
+.room-section {
+    display: grid;
+    justify-items: center;
+    &__photo-load {
+        display: flex;
+        padding: 60px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: $card-background;
+        i {
+            padding: 20px;
+        }
+    }
+    .register-info {
+        padding: 15px;
+        input {
+            height: 30px;
+        }
+    }
+    .price {
+        padding-left: 19px;
+    }
+    .room-details {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        background: $card-background;
+        .item {
+            display: flex;
+            margin-bottom: 10px;
+        }
+    }
+    #details-resize {
+        padding: 55px;
+    }
+}
