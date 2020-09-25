@@ -24,35 +24,39 @@
     </header>
     <main class="room-section">
         <h1 class="room-section__header">Crea tu cuarto</h1>
-        <div class="room-section__photo-load">
-            <i class="fa fa-upload" aria-hidden="true"></i>
-            <p>Subir foto</p>
-        </div>
-        <div class="room-section__photo-load">
-            <i class="fa fa-file-image-o" aria-hidden="true"></i>
-        </div>
-        <div class="register-info price">
-            <p>Precio del alquiler(COP)*</p>
-            <input type="text">
-        </div>
-        <div class="register-info">
-            <p>Tu correo electrónio*</p>
-            <input type="text">
-        </div>
-        <div class="register-info">
-            <p>Tu WhatsApp*</p>
-            <input type="text">
-        </div>
-        <div class="register-info">
-            <p>Dirección</p>
-            <input type="text">
-        </div>
-        <div class="register-info">
-            <p>Área del cuarto(mts2)</p>
-            <input type="text" name="input">
-        </div>
+        <section class="room-pictures">
+            <div class="room-pictures__photo-load">
+                <i class="fa fa-upload" aria-hidden="true"></i>
+                <p>Subir foto</p>
+            </div>
+            <div class="room-pictures__photo-load">
+                <i class="fa fa-file-image-o" aria-hidden="true"></i>
+            </div>
+        </section>
+        <section class="room-basic-data">
+            <div class="register-info">
+                <p>Precio del alquiler(COP)*</p>
+                <input type="text">
+            </div>
+            <div class="register-info">
+                <p>Tu correo electrónio*</p>
+                <input type="text">
+            </div>
+            <div class="register-info">
+                <p>Tu WhatsApp*</p>
+                <input type="text">
+            </div>
+            <div class="register-info">
+                <p>Dirección</p>
+                <input type="text">
+            </div>
+            <div class="register-info">
+                <p>Área del cuarto(mts2)</p>
+                <input type="text" name="input">
+            </div>
+        </section>
         <p class="register-info">Selecciona los muebles con los que viene el cuarto:</p>
-        <div class="room-details" id="details-resize">
+        <section class="room-details" id="room-details-resize">
             <div class="item">
                 <input type="checkbox" name="cama" id="">
                 <label for="cama">Cama</label>
@@ -73,9 +77,9 @@
                 <input type="checkbox" name="sofa" id="">
                 <label for="sofa">Sofá</label>
             </div>
-        </div>
+        </section>
         <p class="register-info">Selecciona los servicios con los que cuenta el cuarto:</p>
-        <div class="room-details">
+        <section class="room-details">
             <div class="item">
                 <input type="checkbox" name="cocina" id="">
                 <label for="cama">Cocina</label>
@@ -116,14 +120,14 @@
                 <input type="checkbox" name="aire" id="">
                 <label for="sofa">A/C</label>
             </div>
-        </div>
-        <div>
+        </section>
+        <section class="room-section__description">
             <p class="register-info">Dános una breve descripción del vecindario y sitios cercanos:</p>
-            <input type="text-box">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
 
             <p class="register-info">Cuéntanos un poco más sobre ti, tus gustos y hobbies:</p>
-            <input type="text">
-        </div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </section>
     </main>
 </body>
 </html>
