@@ -4,12 +4,18 @@
 }
 
 h1 {
-  font-family: "Capriola", sans-serif;
+  font-family: $titles;
   font-size: 24px;
+}
+h3 {
+  padding: 20px;
+  text-align: center;
+  background: $primary;
+  font-family: $titles;
 }
 
 p {
-  font-family: "Lato", sans-serif;
+  font-family: $paragraphs;
   font-size: 18px;
 }
 
