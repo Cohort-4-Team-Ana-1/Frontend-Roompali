@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+body {
+  margin: 0;
+  display: grid;
+  font-family: "Lato", "sans serif";
+}
+
+.header__icons {
+  display: grid;
+  grid-template-columns: 10% repeat(7, 1fr) 10%;
+  padding-top: 15px;
+  padding-right: 10px;
+  background: #FFFFFF;
+}
+.header__icons .icon {
+  padding-right: 5px;
+}
+.header__icons .icon:hover {
+  color: #FF8E3C;
+}
+.header__icons .login {
+  grid-column: 7;
+}
+.header__icons .user {
+  grid-column: 8;
+}
+.header__icons .fav {
+  grid-column: 9;
+}
+
+.room-section {
+  display: grid;
+  justify-items: center;
+}
+.room-section__photo-load {
+  display: flex;
+  padding: 60px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #EFF0F3;
+}
+.room-section__photo-load i {
+  padding: 20px;
+}
+.room-section .register-info {
+  padding: 15px;
+}
+.room-section .register-info input {
+  height: 30px;
+}
+.room-section .price {
+  padding-left: 19px;
+}
+.room-section .room-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background: #EFF0F3;
+}
+.room-section .room-details .item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.room-section #details-resize {
+  padding: 55px;
+}

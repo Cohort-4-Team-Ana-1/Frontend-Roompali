@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/room.css">
+    <title>RoomPali</title>
+</head>
+<body>
+    <header class="header__icons">
+        <div class="login icon">
+            <i class="fa fa-sign-in" aria-hidden="true"></i>
+            <p>Login</p>
+        </div>
+        <div class="user icon">
+            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+            <p>User</p>
+        </div>
+        <div class="fav icon">
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+            <p>Fav</p>
+        </div>
+    </header>
+    <main class="room-section">
+        <h1 class="room-section__header">Crea tu cuarto</h1>
+        <div class="room-section__photo-load">
+            <i class="fa fa-upload" aria-hidden="true"></i>
+            <p>Subir foto</p>
+        </div>
+        <div class="room-section__photo-load">
+            <i class="fa fa-file-image-o" aria-hidden="true"></i>
+        </div>
+        <div class="register-info price">
+            <p>Precio del alquiler(COP)*</p>
+            <input type="text">
+        </div>
+        <div class="register-info">
+            <p>Tu correo electrónio*</p>
+            <input type="text">
+        </div>
+        <div class="register-info">
+            <p>Tu WhatsApp*</p>
+            <input type="text">
+        </div>
+        <div class="register-info">
+            <p>Dirección</p>
+            <input type="text">
+        </div>
+        <div class="register-info">
+            <p>Área del cuarto(mts2)</p>
+            <input type="text" name="input">
+        </div>
+        <p class="register-info">Selecciona los muebles con los que viene el cuarto:</p>
+        <div class="room-details" id="details-resize">
+            <div class="item">
+                <input type="checkbox" name="cama" id="">
+                <label for="cama">Cama</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="armario" id="">
+                <label for="armario">Armario</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="silla" id="">
+                <label for="silla">Silla</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="escritorio" id="">
+                <label for="escritorio">Escritorio</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="sofa" id="">
+                <label for="sofa">Sofá</label>
+            </div>
+        </div>
+        <p class="register-info">Selecciona los servicios con los que cuenta el cuarto:</p>
+        <div class="room-details">
+            <div class="item">
+                <input type="checkbox" name="cocina" id="">
+                <label for="cama">Cocina</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="internet" id="">
+                <label for="armario">Internet</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="lavadora" id="">
+                <label for="silla">Lavadora</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="calefaccion" id="">
+                <label for="escritorio">Calefacción</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="gimnsaio" id="">
+                <label for="sofa">Gimnsaio</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="horno" id="">
+                <label for="cama">Horno</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="estacionamiento" id="">
+                <label for="armario">Estacionamiento</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="television" id="">
+                <label for="silla">Televisión</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="banio" id="">
+                <label for="escritorio">Baño privado</label>
+            </div>
+            <div class="item">
+                <input type="checkbox" name="aire" id="">
+                <label for="sofa">A/C</label>
+            </div>
+        </div>
+        <div>
+            <p class="register-info">Dános una breve descripción del vecindario y sitios cercanos:</p>
+            <input type="text">
+
+            <p class="register-info">Cuéntanos un poco más sobre ti, tus gustos y hobbies:</p>
+            <input type="text">
+        </div>
+    </main>
+</body>
+</html>
