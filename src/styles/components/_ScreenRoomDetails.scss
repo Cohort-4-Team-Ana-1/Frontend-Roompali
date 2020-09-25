@@ -1,0 +1,25 @@
+
+body{
+    background: brown;
+    // padding: 40px;
+}
+
+.slick-slider{
+    // max-width: 100%;
+    // height: 320px;
+    & .slick-prev{
+        left: 0;
+        z-index: 1;
+    }
+    & .slick-next{
+        right: 0;
+    }
+    & img{
+        height: 320px;
+        object-fit: cover;
+    }
+
+}
+
+
+

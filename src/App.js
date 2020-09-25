@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <React.Fragment>
       <AppRouter />
-      <h1>Frontend Roompali</h1>
+      
     </React.Fragment>
   );
 };
