@@ -1,17 +1,4 @@
-//Colors
-$dark-color: #0D0D0D;
-$light-color: #FFFFFF;
-$high-light-color: #FF8E3C;
-$high-light-variation: #D9376E;
-$card-background: #EFF0F3;
-
-//Fonts
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
-@import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
-
-$primary-font: 'Lato', 'sans serif';
-$secondary-font: 'Capriola', 'sans serif';
-
+@import './generales.scss';
 
 body {
     margin: 0;
@@ -42,6 +29,7 @@ body {
         font-size: 1em;
         font-weight: 300;
         margin-top: 21%;
+        border: none;
     }
     .button {
         grid-row: 3;
@@ -53,6 +41,7 @@ body {
         font-size: 1em;
         font-weight: 700;
         margin-top: 20%;
+        border: none;
         color: $dark-color;
         background-color: $high-light-color;
     }
@@ -148,7 +137,7 @@ body {
     .header__title {
         width: 450px;
         justify-self: center;
-        margin-top: 10%;
+        margin-top: 5%;
     }
     .header .input-field {
         width: 350px;

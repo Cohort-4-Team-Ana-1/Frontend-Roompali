@@ -6,6 +6,12 @@ body {
   font-family: "Lato", "sans serif";
 }
 
+body {
+  margin: 0;
+  display: grid;
+  font-family: "Lato", "sans serif";
+}
+
 .header {
   height: 45vh;
   display: grid;
@@ -30,6 +36,7 @@ body {
   font-size: 1em;
   font-weight: 300;
   margin-top: 21%;
+  border: none;
 }
 .header .button {
   grid-row: 3;
@@ -41,6 +48,7 @@ body {
   font-size: 1em;
   font-weight: 700;
   margin-top: 20%;
+  border: none;
   color: #0D0D0D;
   background-color: #FF8E3C;
 }
@@ -133,7 +141,7 @@ body {
   .header__title {
     width: 450px;
     justify-self: center;
-    margin-top: 10%;
+    margin-top: 5%;
   }
 
   .header .input-field {
