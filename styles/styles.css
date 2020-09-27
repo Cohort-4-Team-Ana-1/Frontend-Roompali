@@ -6,15 +6,23 @@ body {
   font-family: "Lato", "sans serif";
 }
 
-.header {
-  height: 200px;
+body {
+  margin: 0;
   display: grid;
-  grid-template-columns: 1fr 225px 1fr;
-  grid-template-rows: 100px 1fr 1fr;
+  font-family: "Lato", "sans serif";
+}
+
+.header {
+  height: 45vh;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 60% 20% 20%;
   background: url(./assets/interior-1519595__340.webp);
+  background-size: cover;
 }
 .header__title {
   grid-column: 2;
+  margin-top: 20%;
   font-family: "Capriola", "sans serif";
   color: #FFFFFF;
 }
@@ -27,6 +35,8 @@ body {
   border-radius: 5px;
   font-size: 1em;
   font-weight: 300;
+  margin-top: 21%;
+  border: none;
 }
 .header .button {
   grid-row: 3;
@@ -37,6 +47,8 @@ body {
   border-radius: 5px;
   font-size: 1em;
   font-weight: 700;
+  margin-top: 20%;
+  border: none;
   color: #0D0D0D;
   background-color: #FF8E3C;
 }
@@ -57,36 +69,43 @@ body {
   padding: 5%;
 }
 .content-section .cards-container .card {
-  grid-row: auto;
-  justify-self: center;
-  width: 300px;
+  width: 277px;
+  height: 286px;
   display: grid;
-  grid-template-columns: 5% 45% 45% 5%;
-  grid-template-rows: 8% repeat(4, 23%);
+  padding-top: 15px;
+  grid-template-columns: repeat(3, 92px);
+  grid-template-rows: 72px 72px 36px 72px 36px;
   border-radius: 5px;
   margin-bottom: 20px;
   padding-bottom: 25px;
   background-color: #EFF0F3;
 }
-.content-section .cards-container .card img {
-  width: 100%;
+.content-section .cards-container .card .roomimage {
+  width: 250px;
+  height: 220px;
   border-radius: 5px;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row: 2;
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
+  padding: 0 0 0 5%;
 }
-.content-section .cards-container .card__body {
-  grid-column: 2;
+.content-section .cards-container .card__info {
+  grid-column: 1/span 2;
   grid-row: 4;
-  margin-top: 55px;
+  margin: 21% 0 0 5%;
 }
-.content-section .cards-container .card__user {
+.content-section .cards-container .card .userimage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
   grid-column: 3;
   grid-row: 4;
+  border: 1px solid white;
 }
-.content-section .cards-container .card__user img {
-  border-radius: 50px;
-  border: 1px solid;
+.content-section .cards-container .card .name {
+  grid-column: 3;
+  align-self: flex-end;
+  padding-left: 10%;
 }
 
 .footer {
@@ -106,29 +125,37 @@ body {
   grid-column: 8;
 }
 
+@media (min-width: 425px) {
+  .header .input-field {
+    margin-top: 17%;
+  }
+  .header .button {
+    margin-top: 15%;
+  }
+}
 @media (min-width: 768px) {
+  .header {
+    height: 25vh;
+  }
+
   .header__title {
     width: 450px;
     justify-self: center;
+    margin-top: 5%;
   }
 
   .header .input-field {
     width: 350px;
+    margin: 0;
   }
 
   .header .button {
     width: 350px;
+    margin: 3px;
   }
 
   .cards-container {
     grid-template-columns: 1fr 1fr;
-  }
-}
-@media (min-width: 1024px) {
-  .header .button {
-    grid-row: 2;
-    grid-column: 3;
-    width: 40%;
   }
 
   .footer {
@@ -140,5 +167,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .header .button {
+    grid-row: 2;
+    grid-column: 3;
+    width: 40%;
+    margin-top: 1%;
+    justify-self: auto;
   }
 }

@@ -1,0 +1,20 @@
+//Colors
+$dark-color: #0D0D0D;
+$light-color: #FFFFFF;
+$high-light-color: #FF8E3C;
+$high-light-variation: #D9376E;
+$card-background: #EFF0F3;
+
+//Fonts
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Capriola&display=swap);
+
+$primary-font: 'Lato', 'sans serif';
+$secondary-font: 'Capriola', 'sans serif';
+
+
+body {
+    margin: 0;
+    display: grid;
+    font-family: $primary-font;
+}

@@ -45,38 +45,68 @@ body {
 .room-section {
     display: grid;
     justify-items: center;
-    &__photo-load {
-        display: flex;
-        padding: 60px;
-        border-radius: 5px;
-        margin-bottom: 20px;
-        background: $card-background;
-        i {
-            padding: 20px;
+    .room-pictures {
+        display: grid;
+        justify-items: center;
+        &__photo-load {
+            display: flex;
+            padding: 60px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            background: $card-background;
+            i {
+                padding: 20px;
+            }
         }
     }
     .register-info {
-        padding: 15px;
+        display: grid;
+        justify-items: center;
         input {
             height: 30px;
         }
     }
-    .price {
-        padding-left: 19px;
+    p {
+        padding: 5%;
     }
     .room-details {
         display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 10px;
         border-radius: 5px;
-        margin-bottom: 20px;
+ 
         background: $card-background;
         .item {
             display: flex;
             margin-bottom: 10px;
         }
     }
-    #details-resize {
+    #room-details-resize {
         padding: 55px;
+    }
+    &__description {
+        display: grid;
+        justify-items: center;
+        p {
+            padding: 5%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .room-section {
+        .room-basic-data {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .room-details {
+            grid-template-columns: repeat(4, 1fr);
+            padding: 1%;
+            width: 72%;
+        }
+        #room-details-resize {
+            padding: 1%;
+            width: 72%;
+        }
     }
 }
