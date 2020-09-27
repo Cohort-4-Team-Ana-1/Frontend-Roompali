@@ -3,10 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import { NavBar } from "../components/NavBar";
 import { LoginModal } from "../components/LoginModal";
-import { ScreenHome } from "../components/ScreenHome";
+import { ScreenHome } from "../pages/ScreenHome";
 import { RegisterModal } from "../components/RegisterModal";
-import { Favorites } from "../components/ScreenFavorites";
-import { RoomDetails } from "../components/ScreenRoomDetails";
+import { Favorites } from "../pages/ScreenFavorites";
+import { RoomDetails } from "../pages/ScreenRoomDetails";
 
 export const AppRouter = () => {
   return (

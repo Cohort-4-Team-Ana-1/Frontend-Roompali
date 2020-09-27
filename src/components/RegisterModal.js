@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 export const RegisterModal = () => {
-  const [modalRegisterIsOpen, setModalRegisterIsOpen] = useState(false);
+  const [modalRegisterIsOpen, setModalRegisterIsOpen] = useState(true);
 
   return (
     <div>
-      <button onClick={() => setModalRegisterIsOpen(true)}>
+      {/* <button onClick={() => setModalRegisterIsOpen(true)}>
         Open Modal Register
-      </button>
+      </button> */}
       <Modal
         isOpen={modalRegisterIsOpen}
         onRequestClose={() => setModalRegisterIsOpen(false)}

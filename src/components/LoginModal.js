@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 
 export const LoginModal = () => {
-  const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
+  const [modalLoginIsOpen, setModalLoginIsOpen] = useState(true);
 
   return (
     <div>
-      <button onClick={() => setModalLoginIsOpen(true)}>
+      {/* <button onClick={() => setModalLoginIsOpen(true)}>
         Open Modal Login
-      </button>
+      </button> */}
       <Modal
         isOpen={modalLoginIsOpen}
         onRequestClose={() => setModalLoginIsOpen(false)}
