@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import { NavBar } from "../components/NavBar";
+import { ScreenCreateRoom } from "../pages/ScreenCreateRoom";
 
 import { ScreenFavorites } from "../pages/ScreenFavorites";
 import { ScreenHome } from "../pages/ScreenHome";
@@ -21,6 +22,7 @@ export const AppRouter = () => {
           <Route exact path="/" component={ScreenHome} />
           <Route exact path="/favorites" component={ScreenFavorites} />
           <Route exact path="/room-details" component={ScreenRoomDetails} />
+          <Route exact path="/create-room" component={ScreenCreateRoom} />
           <Redirect exact to="/" />
         </Switch>
       </>
