@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-export const ScreenLoginModal = () => {
+export const LoginModal = () => {
   const [modalLoginIsOpen, setModalLoginIsOpen] = useState(false);
 
   return (

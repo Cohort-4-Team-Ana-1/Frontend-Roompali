@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 
-export const ScreenRegisterModal = () => {
+export const RegisterModal = () => {
   const [modalRegisterIsOpen, setModalRegisterIsOpen] = useState(false);
 
   return (
