@@ -16,9 +16,9 @@ export const FormCreateRoom = () => {
       
 
 
-       <label>Precio del alquiler COP <input type="number" placeholder="price" name="price" required="required" ref={register({required: true})} /></label><br/>
-       <label>Dirección <input type="text" placeholder="address" name="address" required="required" ref={register({required: true})} /></label><br/>
-       <label>Área del cuarto (mts2) <input type="number" placeholder="square_meters" required="required" name="square_meters" ref={register({required: true})} /></label><br/>
+       <label>Precio del alquiler COP <input type="number" placeholder="price" name="price" required="required" ref={register} /></label><br/>
+       <label>Dirección <input type="text" placeholder="address" name="address" required="required" ref={register} /></label><br/>
+       <label>Área del cuarto (mts2) <input type="number" placeholder="square_meters" required="required" name="square_meters" ref={register} /></label><br/>
        <label>Cama <input type="checkbox" placeholder="bed" name="bed" ref={register} /></label><br/>
        <label>Escritorio <input type="checkbox" placeholder="desk" name="desk" ref={register} /></label><br/>
        <label>Armario <input type="checkbox" placeholder="closet" name="closet" ref={register} /></label><br/>

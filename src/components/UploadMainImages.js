@@ -18,6 +18,8 @@ export const UploadMainImages = () => {
       .then((response) => {
         // response.json();
         console.log(response);
+
+        localStorage.setItem("picture", response.data.image_url);
         response.data.success === false &&
           alert(
             "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"
@@ -27,7 +29,7 @@ export const UploadMainImages = () => {
       })
       .catch((err) => {
         console.error(err);
-        console.log(err)
+        console.log(err);
       });
   };
 
@@ -59,14 +61,15 @@ export const UploadMainImages = () => {
 
   return (
     <>
-      <h1> CAPTURA DE IMAGEN PRINCIPAL </h1>
-      <p>Esta sera la imagen principal del cuarto</p>
+      <h1> UPLOAD SINGLE IMAGE </h1>
+      
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
           onChange={imageHandler}
+          required = 'required'
         />
         <img
           src={profileImg}

@@ -22,7 +22,7 @@ export const NavBar = () => {
             onClick={() => {
               sessionStorage.clear();
 
-              window.location.reload(false);
+              window.location.href="/";
             }}
           >
             Logout
