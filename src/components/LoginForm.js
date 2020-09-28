@@ -41,7 +41,7 @@ export const LoginForm = () => {
           )}, disfruta tu tiempo en Roompali!`
         );
         // window.location.reload(false);
-        window.location.href="/create-host-rol";
+        window.location.href="/choose-user-rol";
       })
       .catch((err) => {
         console.error(err);
