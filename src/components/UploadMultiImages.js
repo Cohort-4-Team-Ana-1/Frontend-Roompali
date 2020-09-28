@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import axios from 'axios'
 
 export const UploadMultiImages = () => {
   const { register, handleSubmit } = useForm();
@@ -12,20 +13,41 @@ export const UploadMultiImages = () => {
       console.log(item);
       formData.append("image", item);
     });
+    axios({
+      url: "/images",
+      method: "POST",
+      data: formData,
+    })
+      .then((response) => {
+        // response.json();
+        console.log(response);
+        response.data.success === false &&
+          alert(
+            "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"
+          );
 
-    const res = await fetch(
-      "https://backend-roompali.vercel.app/api/images/multi",
-      {
-        method: "POST",
-        body: formData,
-      }
-    ).then((res) => res.json());
-    console.log(res);
-    res.success === false &&
-      alert(
-        "Asegurate de que tus archivos sean imagenes con extension .JPG o PNG"
-      );
+        // window.location.reload(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        console.log(err)
+      });
   };
+
+
+  //   const res = await fetch(
+  //     "https://backend-roompali.vercel.app/api/images/multi",
+  //     {
+  //       method: "POST",
+  //       body: formData,
+  //     }
+  //   ).then((res) => res.json());
+  //   console.log(res);
+  //   res.success === false &&
+  //     alert(
+  //       "Asegurate de que tus archivos sean imagenes con extension .JPG o PNG"
+  //     );
+  // };
 
   const [profileImage, setprofileImage] = useState({
     profileImg:
