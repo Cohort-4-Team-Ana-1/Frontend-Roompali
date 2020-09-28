@@ -21,8 +21,9 @@ export const NavBar = () => {
             to="/"
             onClick={() => {
               sessionStorage.clear();
+              localStorage.clear();
 
-              window.location.href="/";
+              window.location.href = "/";
             }}
           >
             Logout

@@ -7,10 +7,12 @@ export const ScreenHome = () => {
       <h1>Home Screen</h1>
 
       <h4>
-        Pagina de detalles de cuarto --- <Link to="/room-details">Room Details</Link>{" "}
+        Pagina de detalles de cuarto ---{" "}
+        <Link to="/room-details">Room Details</Link>{" "}
       </h4>
       <h4>
-        Pagina para creacion de cuarto --- <Link to="/create-room">Create Room</Link>{" "}
+        Pagina para creacion de cuarto ---{" "}
+        <Link to="/create-room">Create Room</Link>{" "}
       </h4>
     </div>
   );

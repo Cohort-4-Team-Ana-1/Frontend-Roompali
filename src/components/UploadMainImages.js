@@ -18,31 +18,21 @@ export const UploadMainImages = () => {
       .then((response) => {
         // response.json();
         console.log(response);
+        alert("Imagen principal subida");
 
-        localStorage.setItem("picture", response.data.image_url);
+        localStorage.setItem("main_image", response.data.image_url);
         response.data.success === false &&
           alert(
             "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"
           );
 
-        // window.location.reload(false);
+        window.location.href = "/create-room/step-2";
       })
       .catch((err) => {
         console.error(err);
         console.log(err);
       });
   };
-
-  //   const res = await fetch("https://backend-roompali.vercel.app/api/images", {
-  //     method: "POST",
-  //     body: formData,
-  //   }).then((res) => res.json());
-  //   console.log(res);
-  //   res.success === false &&
-  //     alert(
-  //       "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"
-  //     );
-  // };
 
   const [profileImage, setprofileImage] = useState({
     profileImg:
@@ -62,14 +52,14 @@ export const UploadMainImages = () => {
   return (
     <>
       <h1> UPLOAD SINGLE IMAGE </h1>
-      
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
           onChange={imageHandler}
-          required = 'required'
+          required="required"
         />
         <img
           src={profileImg}

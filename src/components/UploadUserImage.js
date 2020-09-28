@@ -1,33 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-export const UploadMultiImages = () => {
+export const UploadUserImage = () => {
   const { register, handleSubmit } = useForm();
 
   const onSubmit = async (data) => {
     const formData = new FormData();
-    const toArray = Object.values(data.picture);
-    console.log(toArray);
-    toArray.map((item) => {
-      console.log(item);
-      formData.append("image", item);
-    });
+    console.log(data);
+    formData.append("image", data.picture[0]);
+
     axios({
-      url: "images/multi",
+      url: "/images",
       method: "POST",
       data: formData,
     })
       .then((response) => {
-        // response.json();
-        alert("Imagenes del cuarto subidas");
         console.log(response);
-        localStorage.setItem("secondary_images", response.data.images_urls);
+
+        localStorage.setItem("user_picture", response.data.image_url);
         response.data.success === false &&
           alert(
             "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"
           );
-        window.location.href = "/create-room/step-3";
       })
       .catch((err) => {
         console.error(err);
@@ -35,23 +30,35 @@ export const UploadMultiImages = () => {
       });
   };
 
+  const [profileImage, setprofileImage] = useState({
+    profileImg:
+      "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
+  });
+
+  const { profileImg } = profileImage;
+
+  const imageHandler = (e) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      reader.readyState === 2 && setprofileImage({ profileImg: reader.result });
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  };
+
   return (
     <>
-      <h1> CAPTURA DE IMAGENES MULTIPLES </h1>
-      <p>
-        Escoge varias imagenes para que la gente conozca tu cuarto a detalle
-      </p>
+      <h1> UPLOAD SINGLE IMAGE </h1>
+
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
-          multiple
+          onChange={imageHandler}
           required="required"
         />
         <img
-          accept="image/*"
-          src="https://images.igdb.com/igdb/image/upload/t_cover_big/co254s.jpg"
+          src={profileImg}
           accept="image/*"
           style={{ width: `100px` }}
           alt=""

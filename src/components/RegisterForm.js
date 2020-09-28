@@ -37,7 +37,6 @@ export const RegisterForm = () => {
           "Gracias por registrarte en Roompali, inicia sesion para mejorar tu experiencia"
         );
 
-        
         window.location.reload(false);
       })
       .catch((err) => {

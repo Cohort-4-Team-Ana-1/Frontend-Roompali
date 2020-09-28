@@ -9,7 +9,7 @@ export const ScreenCreateRoom = () => {
       <UploadMainImages />
       <hr />
       <UploadMultiImages />
-      <hr/>
+      <hr />
       <FormCreateRoom />
     </>
   );
