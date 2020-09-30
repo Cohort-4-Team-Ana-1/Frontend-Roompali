@@ -1,0 +1,36 @@
+$light: #FFFFFF;
+$dark: #0D0D0D;
+$primary: #FF8E3C;
+$variation: #D9376E;
+$dark-opacity: rgba(31, 18, 53, 0.4);
+$card-background: #EFF0F3;
+
+
+$titles: 'Capriola', sans-serif;
+$paragraphs: 'Lato', sans-serif;
+
+nav {
+    display: grid;
+    height: 65px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+    position: sticky;
+    & :hover{
+        color: $primary;
+    }
+    & a{
+        text-decoration: none;
+        color: $dark;
+    }
+    & .navBar__item{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        
+    }
+    & p{
+        font-size: 10px;
+    }
+}
