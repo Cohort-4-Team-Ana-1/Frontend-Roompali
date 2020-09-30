@@ -51,13 +51,11 @@ body {
     }
   }
   & .user__address {
-    display: grid;
+    display: flex;
     grid-auto-flow: column;
     padding: 0 20px 30px 20px;
-    text-align: center;
     align-items: center;
-    grid-template-columns: 60px 1fr;
-    justify-items: center;
+    justify-content: center;
     & p {
       font-weight: 700;
     }
@@ -91,7 +89,26 @@ body {
     font-size: 16px;
   }
 }
-
+.room__details{
+  display: grid;
+  & .room__furnitue__prueba{
+    display: grid;
+    grid-gap: 20px;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(110px,1fr));
+    padding: 20px;
+  }
+  & .room__furniture{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: center;
+    & p{
+      padding: 0;
+  
+    }
+  }
+ 
+}
 .room__services {
   & .services-icons {
     display: grid;

@@ -17,9 +17,7 @@ export const CarouselRoomDetails = () => {
   const data = useFetch();
 
   return (
-    <div>
-      <h1>holaa</h1>
-
+    <>
       <div id="slider__container">
         <Slider {...settings}>
           {data[1].map((item) => (
@@ -30,6 +28,6 @@ export const CarouselRoomDetails = () => {
           <p>$ {new Intl.NumberFormat("es-CO").format(data[0])} COP / Noche</p>
         </div>
       </div>
-    </div>
+    </>
   );
 };

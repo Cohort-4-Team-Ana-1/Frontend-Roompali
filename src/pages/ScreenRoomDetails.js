@@ -1,11 +1,14 @@
 import React from "react";
 import { CarouselRoomDetails } from "../components/CarouselRoomDetails";
 import { UserDetails } from "../components/UserDetails";
+import { useFetchUserDetails } from "../hooks/useFetchUserDetails";
 
 export const ScreenRoomDetails = () => {
+  const data = useFetchUserDetails();
+  const roomData = data[0];
   return (
     <>
-      <h1>Room Details Screen </h1>
+      <h3>{roomData.room_name} </h3>
 
       <CarouselRoomDetails />
       <UserDetails />
