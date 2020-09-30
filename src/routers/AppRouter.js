@@ -27,7 +27,7 @@ export const AppRouter = () => {
         <Switch>
           <Route exact path="/" component={ScreenHome} />
           <Route exact path="/favorites" component={ScreenFavorites} />
-          <Route exact path="/room-details" component={ScreenRoomDetails} />
+          <Route exact path="/room-details/:roomId" component={ScreenRoomDetails} />
           <Route exact path="/create-room" component={ScreenCreateRoom} />
           <Route exact path="/choose-user-rol" component={ScreenChooseRol} />
           <Route exact path="/create-host-rol" component={ScreenCreateHostRol} />

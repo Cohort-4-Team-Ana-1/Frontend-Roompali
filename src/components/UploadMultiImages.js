@@ -9,8 +9,9 @@ export const UploadMultiImages = () => {
     const formData = new FormData();
     const toArray = Object.values(data.picture);
     console.log(toArray);
+    // localStorage.setItem('secondary_images', toArray)
     toArray.map((item) => {
-      console.log(item);
+      // console.log(item); 
       formData.append("image", item);
     });
     axios({
@@ -22,7 +23,16 @@ export const UploadMultiImages = () => {
         // response.json();
         alert("Imagenes del cuarto subidas");
         console.log(response);
-        localStorage.setItem("secondary_images", response.data.images_urls);
+        // const images_urls = JSON.stringify(response.data.images_urls)
+        console.log(response.data.images_urls)
+
+        const secondary_images = []
+
+        localStorage.setItem("secondary_images", JSON.stringify(response.data.images_urls));
+
+
+
+
         response.data.success === false &&
           alert(
             "Asegurate de que tu archivo sea una imagen con extension .JPG o PNG"

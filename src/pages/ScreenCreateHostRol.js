@@ -29,7 +29,7 @@ export const ScreenCreateHostRol = () => {
     })
       .then((response) => {
         console.log(response);
-        window.location.href = "/create-room";
+        window.location.href = "/create-room/step-1";
       })
       .catch((err) => {
         console.error(err);
