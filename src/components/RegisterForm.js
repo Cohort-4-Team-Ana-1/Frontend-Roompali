@@ -47,10 +47,13 @@ export const RegisterForm = () => {
   return (
     <div>
       <div className="modal-body">
+          <h1>Roompali</h1>
         <form onSubmit={handleSubmit}>
-          <h1>FORMULARIO DE REGISTRO</h1>
-          <hr />
+          
           <div className="form-group">
+
+            <label>
+              Nombre de usuario
             <input
               type="text"
               name="username"
@@ -60,8 +63,10 @@ export const RegisterForm = () => {
               value={username}
               onChange={handleInputChange}
             />
-          </div>
-          <div className="form-group">
+            </label>
+         
+         <label >Correo electrónico
+
             <input
               type="email"
               name="email"
@@ -71,9 +76,10 @@ export const RegisterForm = () => {
               value={email}
               onChange={handleInputChange}
             />
-          </div>
-
-          <div className="form-group">
+         </label>
+          
+            <label>Contraseña
+         
             <input
               type="password"
               name="password"
@@ -81,11 +87,11 @@ export const RegisterForm = () => {
               placeholder="*****"
               value={password}
               onChange={handleInputChange}
-            />
-          </div>
-          <button type="submit" className="btn btn-primary">
-            REGISTRARSE
+            /></label>
+          <button type="submit">
+            Registrarme
           </button>
+          </div>
         </form>
       </div>
     </div>

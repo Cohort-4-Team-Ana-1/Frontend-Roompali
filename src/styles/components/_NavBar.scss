@@ -12,6 +12,7 @@ nav {
         text-decoration: none;
         color: $dark;
     }
+    
     & .navBar__item{
         display: grid;
         justify-items: center;
@@ -21,5 +22,18 @@ nav {
     }
     & p{
         font-size: 10px;
+    }
+}
+.ReactModal__Content{
+    & .exit__button{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        height: 62px;
+        top: 0;
+        background:none;
+        width: 50px;
+        cursor: pointer;
     }
 }

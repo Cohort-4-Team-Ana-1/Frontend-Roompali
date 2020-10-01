@@ -6,6 +6,7 @@ import { RegisterForm } from "./RegisterForm";
 
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiLoginBoxLine, RiHomeHeartFill, RiMapPinUserFill, RiLogoutBoxRLine } from "react-icons/ri";
+import {IoIosArrowDropleft} from 'react-icons/io'
 
 export const NavBar = () => {
   const username = sessionStorage.getItem("username");
@@ -65,10 +66,13 @@ export const NavBar = () => {
             <Modal
               isOpen={modalLoginIsOpen}
               onRequestClose={() => setModalLoginIsOpen(false)}
+              className="Modal"
+              overlayClassName="Overlay"
             >
               <LoginForm />
-
-              <button onClick={() => setModalLoginIsOpen(false)}>Exit</button>
+              {/* <p onClick={() => setModalRegisterIsOpen(false)}> </p> */}
+              
+              <button className = "exit__button" onClick={() => setModalLoginIsOpen(false)}><IoIosArrowDropleft size = {"1.5em"} /></button>
             </Modal>
           </div>
 
@@ -83,11 +87,11 @@ export const NavBar = () => {
             <Modal
               isOpen={modalRegisterIsOpen}
               onRequestClose={() => setModalRegisterIsOpen(false)}
+              className="Modal"
+              overlayClassName="Overlay"
             >
               <RegisterForm />
-              <button onClick={() => setModalRegisterIsOpen(false)}>
-                Exit
-              </button>
+              <button className = "exit__button" onClick={() => setModalRegisterIsOpen(false)}><IoIosArrowDropleft size = {"1.5em"} /></button>
             </Modal>
           </div>
 

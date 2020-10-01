@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useForm } from "../hooks/useForm";
 import axios from "axios";
+import { IoIosArrowDropleft } from "react-icons/io";
 
 export const LoginForm = () => {
   const [formValues, handleInputChange] = useForm({
@@ -41,7 +42,7 @@ export const LoginForm = () => {
           )}, disfruta tu tiempo en Roompali!`
         );
         // window.location.reload(false);
-        window.location.href="/choose-user-rol";
+        window.location.href = "/choose-user-rol";
       })
       .catch((err) => {
         console.error(err);
@@ -51,35 +52,35 @@ export const LoginForm = () => {
   return (
     <div>
       <div className="modal-body">
-        <h1>FORMULARIO DE INICIO DE SESION </h1>
+        <h1>Roompali</h1>
         <form action="/" onSubmit={handleSubmit}>
-          <hr />
-          <div className="form-group">
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              placeholder="email@gmail.com"
-              autoComplete="off"
-              value={email}
-              onChange={handleInputChange}
-            />
-          </div>
 
+          <h1>Inicia Sesion</h1>
           <div className="form-group">
-            <input
-              type="password"
-              name="password"
-              className="form-control"
-              placeholder="*****"
-              value={password}
-              onChange={handleInputChange}
-            />
-          </div>
+            <label>
+              Correo electronico
+              <input
+                type="email"
+                name="email"
+                placeholder="email@gmail.com"
+                autoComplete="off"
+                value={email}
+                onChange={handleInputChange}
+              />{" "}
+            </label>
 
-          <button type="submit" className="btn btn-primary">
-            ENTRAR
-          </button>
+            <label>
+              Contraseña
+              <input
+                type="password"
+                name="password"
+                placeholder="*****"
+                value={password}
+                onChange={handleInputChange}
+              />
+            </label>
+          <button type = "submit">Entrar</button>
+          </div>
         </form>
       </div>
     </div>
