@@ -1,0 +1,176 @@
+// .card .card__price .card__roomImage  .card__info .card__adress
+// .card__userimage .card__username
+
+.cards__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    .card{
+        background: $card-background;
+        display: grid;
+        min-height: 320px;
+        padding: 20px;
+        border-radius: 5px;
+        justify-items: center;
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 60% 20% 20%;
+        & .card__heart{
+            grid-column: 1;
+            grid-row: 1;
+            color: orange;
+            // background: orange;
+            justify-self: start;
+            margin: 10px;
+        }
+        & .card__userimage{
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 50%;
+            grid-column: 2;
+            grid-row: 2 / span 2;
+            align-self: center;
+            border: solid $light;
+        }
+        & .card__roomImage {
+            width: 100%;
+            height: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            grid-column: 1/ span 2;
+            grid-row: 1 / span 2;
+            border-radius: 10px;
+            
+        }
+        & .card__price{
+            display: grid;
+            grid-column: 2;
+            grid-row: 1;
+            background-color: $primary;
+            height: 25px;
+            width: 100%;
+            padding: 5px;
+            font-size: 1em ;
+            font-weight: 700;
+            justify-self: end;
+            border-radius: 5px;
+            justify-items: center;
+            align-items: center;
+        }
+        .card__address{
+            grid-row: 3;
+            // padding-bottom: 20px;
+            height: 100%;
+            display: grid;
+            font-size: 0.9em;
+            text-align: center;
+
+            align-items: center;
+        }
+        .card__username{
+            padding-top: 20px;
+            grid-column: 2;
+            grid-row: 3;
+            align-self: end;
+            
+            // padding-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .cards-container {
+//     display: grid;
+//     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+//     align-items: center;
+//     justify-items: center;
+//     grid-gap: 50px;
+//     padding: 5%;
+//     .card {
+//         width: 277px;
+//         height: 286px;
+//         display: grid;
+//         padding-top: 15px;
+//         grid-template-columns: repeat(3, 92px);
+//         grid-template-rows: 72px 72px 36px 72px 36px;
+//         border-radius: 5px;
+//         margin-bottom: 20px;
+//         padding-bottom: 25px;
+//         background-color: $card-background;
+//         .roomimage {
+//             width: 250px;
+//             height: 220px;
+//             border-radius: 5px;
+//             grid-column: 1 / span 3;
+//             grid-row: 1 / span 3;
+//             padding: 0 0 0 5%;
+//         }
+//         &__info {
+//             grid-column: 1 / span 2;
+//             grid-row: 4;
+//             // margin: 21% 0 0 5%;
+//             & .info{
+//                 font-size: 16px;
+//             }
+//         }   
+//         &__price{
+//             grid-column: 3;
+//             grid-row: 1;
+//             z-index: 2;
+//             background: $primary;
+//             height: 25px;
+//             // margin-top: 10px;
+//             // align-self: center;
+//         }
+//         .userimage {
+//             width: 70px;
+//             height: 70px;
+//             border-radius: 50%;
+//             object-fit: cover;
+//             grid-column: 3;
+//             grid-row: 4;
+//             border: 1px solid white;
+//         }
+//         .name {
+//             grid-column: 3;
+//             align-self: flex-end;
+//             padding-left: 10%;
+//         }
+//     }
+// }

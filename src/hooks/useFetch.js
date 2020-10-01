@@ -11,7 +11,7 @@ export const useFetch = () => {
     axios({
       method: "get",
       url:
-        `https://backend-roompali.vercel.app/api/rooms/${roomId}`,
+        `https://backend-roompali.vercel.app/api/rooms`,
     })
       .then(function (response) {
         const secondary_images_data = response.data.body.secondary_images
