@@ -4,7 +4,8 @@ import { UploadMainImages } from "./UploadMainImages";
 export const Step1 = () => {
   return (
     <>
-      <h1>Este es el paso 1</h1>
+      <h1>Creando tu habitación</h1>
+
       <UploadMainImages />
     </>
   );

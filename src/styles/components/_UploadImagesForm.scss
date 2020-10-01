@@ -1,0 +1,22 @@
+.upload__singleImage {
+  display: grid;
+}
+
+.upload__form {
+  display: grid;
+  justify-content: center;
+  padding: 10%;
+  justify-items: center;
+  // border: solid $dark-opacity;
+  & img {
+    object-fit: cover;
+  }
+  & h2 {
+    color: $dark;
+    font-size: 18px;
+  }
+  & p {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}

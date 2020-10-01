@@ -1,3 +1,13 @@
+$light: #ffffff;
+$dark: #0d0d0d;
+$primary: #ff8e3c;
+$variation: #d9376e;
+$dark-opacity: rgba(31, 18, 53, 0.4);
+$card-background: #eff0f3;
+
+$titles: "Capriola", sans-serif;
+$paragraphs: "Lato", sans-serif;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +16,12 @@
 h1 {
   font-family: $titles;
   font-size: 24px;
+  background-color: $primary;
+  color: $dark;
+  width: 100vw;
+  font-size: 18px;
+  text-align: center;
+  padding: 20px 0;
 }
 h3 {
   padding: 20px;
@@ -23,4 +39,21 @@ html,
 body {
   height: 100vh;
   width: 100vw;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose_image {
+  cursor: pointer;
+}
+
+button {
+  background: $primary;
+  width: 200px;
+  height: 50px;
+  border: none;
+  font-family: $titles;
+  font-size: 1.2em;
 }

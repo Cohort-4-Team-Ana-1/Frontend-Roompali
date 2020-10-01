@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import default_multiple_pictures from "../assets/default_multiple_pictures.svg";
 
 export const UploadMultiImages = () => {
   const { register, handleSubmit } = useForm();
@@ -11,7 +12,7 @@ export const UploadMultiImages = () => {
     console.log(toArray);
     // localStorage.setItem('secondary_images', toArray)
     toArray.map((item) => {
-      // console.log(item); 
+      // console.log(item);
       formData.append("image", item);
     });
     axios({
@@ -23,15 +24,12 @@ export const UploadMultiImages = () => {
         // response.json();
         alert("Imagenes del cuarto subidas");
         console.log(response);
-        // const images_urls = JSON.stringify(response.data.images_urls)
-        console.log(response.data.images_urls)
+        console.log(response.data.images_urls);
 
-        const secondary_images = []
-
-        localStorage.setItem("secondary_images", JSON.stringify(response.data.images_urls));
-
-
-
+        localStorage.setItem(
+          "secondary_images",
+          JSON.stringify(response.data.images_urls)
+        );
 
         response.data.success === false &&
           alert(
@@ -45,29 +43,46 @@ export const UploadMultiImages = () => {
       });
   };
 
+  const [profileImage, setprofileImage] = useState({
+    profileImg: default_multiple_pictures,
+  });
+
+  const { profileImg } = profileImage;
+
+  const imageHandler = (e) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      reader.readyState === 2 && setprofileImage({ profileImg: reader.result });
+    };
+    reader.readAsDataURL(e.target.files[0]);
+  };
   return (
-    <>
-      <h1> CAPTURA DE IMAGENES MULTIPLES </h1>
+    <section className="upload__form">
       <p>
         Escoge varias imagenes para que la gente conozca tu cuarto a detalle
       </p>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form className="upload__singleImage" onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
           multiple
+          onChange={imageHandler}
           required="required"
+          id="multipleImageRoom"
         />
-        <img
-          accept="image/*"
-          src="https://images.igdb.com/igdb/image/upload/t_cover_big/co254s.jpg"
-          accept="image/*"
-          style={{ width: `100px` }}
-          alt=""
-        />
+        <label htmlFor="multipleImageRoom">
+          <img
+            accept="image/*"
+            src={profileImg}
+            accept="image/*"
+            style={{ width: "200px", height: "200px" }}
+            alt=""
+            className="choose_image"
+          />
+        </label>
         <button>Submit</button>
       </form>
-    </>
+    </section>
   );
 };

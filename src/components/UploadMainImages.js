@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import default_profile_image from "../assets/default_profile_image.svg";
 
 export const UploadMainImages = () => {
   const { register, handleSubmit } = useForm();
@@ -35,8 +36,7 @@ export const UploadMainImages = () => {
   };
 
   const [profileImage, setprofileImage] = useState({
-    profileImg:
-      "https://images.igdb.com/igdb/image/upload/t_cover_big/co2gpr.jpg",
+    profileImg: default_profile_image,
   });
 
   const { profileImg } = profileImage;
@@ -50,25 +50,28 @@ export const UploadMainImages = () => {
   };
 
   return (
-    <>
-      <h1> UPLOAD SINGLE IMAGE </h1>
-
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <section className="upload__form">
+      <form className="upload__singleImage" onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
           onChange={imageHandler}
           required="required"
+          id="mainImageRoom"
         />
-        <img
-          src={profileImg}
-          accept="image/*"
-          style={{ width: `100px` }}
-          alt=""
-        />
+        <label htmlFor="mainImageRoom">
+          {" "}
+          <img
+            src={profileImg}
+            accept="image/*"
+            style={{ width: "200px", height: "200px" }}
+            alt=""
+            className="choose_image"
+          />
+        </label>
         <button>Submit</button>
       </form>
-    </>
+    </section>
   );
 };

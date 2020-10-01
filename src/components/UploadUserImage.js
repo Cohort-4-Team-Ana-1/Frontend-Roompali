@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import default_profile_image from "../assets/default_profile_image.svg";
+
 import axios from "axios";
 
 export const UploadUserImage = () => {
@@ -16,6 +18,7 @@ export const UploadUserImage = () => {
       data: formData,
     })
       .then((response) => {
+        alert("Imagen de perfil guardada");
         console.log(response);
 
         localStorage.setItem("user_picture", response.data.image_url);
@@ -31,8 +34,7 @@ export const UploadUserImage = () => {
   };
 
   const [profileImage, setprofileImage] = useState({
-    profileImg:
-      "https://images.igdb.com/igdb/image/upload/t_cover_big/co254y.jpg",
+    profileImg: default_profile_image,
   });
 
   const { profileImg } = profileImage;
@@ -46,25 +48,30 @@ export const UploadUserImage = () => {
   };
 
   return (
-    <>
-      <h1> UPLOAD SINGLE IMAGE </h1>
-
-      <form onSubmit={handleSubmit(onSubmit)}>
+    <section className="upload__form">
+      <form className="upload__singleImage" onSubmit={handleSubmit(onSubmit)}>
         <input
           ref={register}
           type="file"
           name="picture"
           onChange={imageHandler}
           required="required"
-        />
-        <img
-          src={profileImg}
           accept="image/*"
-          style={{ width: `100px` }}
-          alt=""
+          id="user_photo"
         />
-        <button>Submit</button>
+        <label htmlFor="user_photo">
+          {" "}
+          <img
+            src={profileImg}
+            accept="image/*"
+            style={{ width: "200px", height: "200px" }}
+            alt=""
+            className="choose_image"
+          />
+        </label>
+
+        <button>Guardar</button>
       </form>
-    </>
+    </section>
   );
 };
