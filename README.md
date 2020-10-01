@@ -11,7 +11,7 @@
     <img src="https://img.shields.io/badge/Status-In progress-orange">
 </div>
 
-Roompali APP your best tool to find rooms in the most popular cities in Colombia.
+<p align="center">Roompali APP your best tool to find rooms in the most popular cities in Colombia.</p>
 
 ---
 
@@ -41,25 +41,34 @@ Roompali APP your best tool to find rooms in the most popular cities in Colombia
 ## Views
 
 ### Home
-
-![Home](https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png)
+<div align="center">
+    <img alt="Home" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+</div>
 
 ### Sign-up
 
-![Sign-up](https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png)
+<div align="center">
+    <img alt="Sign-up" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+</div>
 
 
 ### Sign-in
 
-![Sign-in](https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png)
+<div align="center">
+    <img alt="Sign-in" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+</div>
 
 ### Rol Creation
 
-![Rol-creation](https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png)
+<div align="center">
+    <img alt="Rol-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+</div>
 
 ### Room Creation
 
-![Room-creation](https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png)
+<div align="center">
+    <img alt="Room-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+</div>
 
 ## More Information
 
