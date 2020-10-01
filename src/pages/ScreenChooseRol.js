@@ -30,12 +30,21 @@ export const ScreenChooseRol = () => {
 
   return (
     <div>
-      <h1>Screen Rol Page</h1>
+      <div className="select__choice">
+
+      <h1>Roompali</h1>
+      <div className = "select__options">
+
       <p>Bienvenido a Rompali, que deseas hacer hoy?</p>
-      <button>
-        <Link to="/"> Buscar una habitacion</Link>
-      </button>
+      
+      
+        <Link to="/"> <button>Buscar una habitacion</button></Link>
+      
+
       <button onClick={handleClick}>Publicar una habitacion</button>
+
+      </div>
+      </div>
     </div>
   );
 };
