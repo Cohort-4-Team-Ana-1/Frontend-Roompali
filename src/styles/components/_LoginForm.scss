@@ -1,0 +1,58 @@
+.Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: $card-background;
+    height: 70vh;
+  }
+
+  .Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $dark-opacity
+  }
+  .modal-body{
+    height: 100%;
+    & h1{
+        width: 100%;
+        background: $light;
+    }
+    & form{
+        display: grid;
+        padding: 40px;
+        height: 100%;
+        align-content: center;
+        & button{
+            justify-items: center;
+            height: 40px;
+            width: 100%;
+        }
+        & h1{
+            background: none;
+            font-size: 1.5em;
+        }
+    }
+    & .form-group{
+        display: grid;
+        grid-gap: 30px;
+        justify-items: center;
+        justify-items: center;
+        & label{
+            display: grid;
+            width: 100%;
+            height: 60px;
+            font-family: $paragraphs;
+            & input{
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+    
+    }
+     
+  }
