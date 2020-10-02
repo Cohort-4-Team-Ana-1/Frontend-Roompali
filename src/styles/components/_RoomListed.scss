@@ -2,11 +2,18 @@
 // .card__userimage .card__username
 
 .cards__container{
+    & a{
+        text-decoration: none;
+        color: $dark;
+    }
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
     grid-gap: 20px;
     padding: 20px;
     .card{
+        & a{
+            font-family: $paragraphs;
+        }
         background: $card-background;
         display: grid;
         min-height: 320px;
@@ -18,7 +25,7 @@
         & .card__heart{
             grid-column: 1;
             grid-row: 1;
-            color: orange;
+            color:$primary;
             // background: orange;
             justify-self: start;
             margin: 10px;
@@ -65,8 +72,8 @@
             display: grid;
             font-size: 0.9em;
             text-align: center;
-
             align-items: center;
+            
         }
         .card__username{
             padding-top: 20px;

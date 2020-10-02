@@ -8,9 +8,13 @@ nav {
     & :hover{
         color: $primary;
     }
+    & img{
+        width: 90%;
+    }
     & a{
         text-decoration: none;
         color: $dark;
+        align-self: center;
     }
     
     & .navBar__item{
@@ -18,7 +22,7 @@ nav {
         justify-items: center;
         align-items: center;
         cursor: pointer;
-        
+        align-self: center;
     }
     & p{
         font-size: 10px;

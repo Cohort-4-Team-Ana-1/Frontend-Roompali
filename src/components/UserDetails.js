@@ -100,13 +100,6 @@ export const UserDetails = () => {
           {roomData.air_conditioner === true && <IoIosSnow size={iconSize} />}
           {roomData.television === true && <ImDisplay size={iconSize} />}
           {roomData.kitchen === true && <ImSpoonKnife size={iconSize} />}
-          {/* {
-          roomData.kitchen === true && (
-            <GrElevator size={iconSize} />
-          )
-          } */}
-
-          {/* <MdKitchen size={iconSize} /> */}
         </div>
       </section>
       <section className="room__user-info">

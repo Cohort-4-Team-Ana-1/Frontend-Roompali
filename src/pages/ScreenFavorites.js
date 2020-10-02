@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDropleft } from "react-icons/io";
 import Modal from "react-modal";
+import { FavoritesList } from "../components/FavoritesList";
 import { LoginForm } from "../components/LoginForm";
 import { RegisterForm } from "../components/RegisterForm";
 
@@ -11,7 +12,11 @@ export const ScreenFavorites = () => {
   return (
     <>
       {username ? (
-        <h1>Favorites Screen</h1>
+        <>
+        
+        <h1>Tus habitaciones favoritas</h1>
+        <FavoritesList/>
+        </>
       ) : (
         <>
           <section className = "select__choice">

@@ -56,6 +56,70 @@ export const FormCreateRoom = () => {
               <label className="register-info">
                 <p>Ciudad:</p>
                 <select name="city" ref={register({ required: true })}>
+                  <option value="Leticia">Leticia</option>
+
+                  <option value="Medellín">Medellín</option>
+
+                  <option value="Arauca">Arauca</option>
+
+                  <option value="Barranquilla">Barranquilla</option>
+
+                  <option value="Cartagena">Cartagena</option>
+
+                  <option value="Tunja">Tunja</option>
+
+                  <option value="Manizales">Manizales</option>
+
+                  <option value="Florencia">Florencia</option>
+
+                  <option value="Yopal">Yopal</option>
+
+                  <option value="Popayán">Popayán</option>
+
+                  <option value="Valledupar">Valledupar</option>
+
+                  <option value="Quibdó">Quibdó</option>
+
+                  <option value="Montería">Montería</option>
+
+                  <option value="Bogotá">Bogotá</option>
+
+                  <option value="Inírida">Inírida</option>
+
+                  <option value="Guaviare Cali">Guaviare Cali</option>
+
+                  <option value="Neiva">Neiva</option>
+
+                  <option value="Rioacha">Rioacha</option>
+
+                  <option value="Santa Marta Cali">Santa Marta Cali</option>
+
+                  <option value="Villavicencio">Villavicencio</option>
+
+                  <option value="Pasto">Pasto</option>
+
+                  <option value="Cúcuta">Cúcuta</option>
+
+                  <option value="Mocoa">Mocoa</option>
+
+                  <option value="Armenia">Armenia</option>
+
+                  <option value="Pereira">Pereira</option>
+
+                  <option value="San Andrés">San Andrés</option>
+
+                  <option value="Bucaramanga">Bucaramanga</option>
+
+                  <option value="Sincelejo">Sincelejo</option>
+
+                  <option value="Ibagué">Ibagué</option>
+
+                  <option value="Cali">Cali</option>
+
+                  <option value="Mitú">Mitú</option>
+
+                  <option value="Puerto Carreño">Puerto Carreño</option>
+
                   <option value="Medellin">Medellin</option>
                   <option value=" Bogota"> Bogota</option>
                   <option value=" Cali"> Cali</option>
