@@ -42,11 +42,11 @@ console.log(favorites)
             alt=""
           />
           <div className="hero__input">
-            <h1>Encuentra tu roomie ideal!</h1>
+            <h1>¡Encuentra tu roomie ideal!</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
               <input
                 type="search"
-                placeholder="search"
+                placeholder="¿En qué ciudad quieres vivir?"
                 name="search"
                 ref={register}
                 autoComplete="off"
