@@ -1,0 +1,57 @@
+.heroHome{
+    // display: grid;
+    // max-height: 35vh;
+    & .hero__banner{
+        display: grid;
+        // // grid-template-rows: 50% 1fr 1fr;
+        // height: 100%;
+        & img{
+            // display: grid;
+            margin-top: 3px;
+            grid-column: 1;
+            grid-row: 1 ;
+            width: 100vw;
+            height: 45vh;
+            object-fit: cover;
+            filter: blur(3px);
+            box-sizing: content-box;
+            z-index: -1;
+        }
+        & .hero__input{
+            display: grid;
+            // background: rgba(216, 214, 214, 0.9);
+            // color: $light;
+            grid-column: 1;
+            grid-row: 1 ;
+            max-height: 45vh;
+            // font-size: 2.5em;
+            background-color: $dark-opacity;
+            padding: 30px;
+            justify-items: center;
+            align-items: center;
+            & h1{
+                background: none;
+                color: $light;
+                font-size: 2em;
+                width: 100%;
+                padding: 20px 0 0 0;
+            }
+            & form{
+                display: grid;
+                width: 50vw;
+                grid-gap: 15px;
+                
+                & input{
+                    height: 5vh;
+                    padding: 10px;
+                }
+                & button{
+                    height: 5vh;
+                    // height: 40px;
+                    // font-size: 0.5em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

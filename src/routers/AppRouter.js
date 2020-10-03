@@ -17,6 +17,7 @@ import { ScreenCreateRoom } from "../pages/ScreenCreateRoom";
 import { ScreenFavorites } from "../pages/ScreenFavorites";
 import { ScreenHome } from "../pages/ScreenHome";
 import { ScreenRoomDetails } from "../pages/ScreenRoomDetails";
+import { ScreenSearch } from "../pages/ScreenSearch";
 
 
 export const AppRouter = () => {
@@ -35,6 +36,9 @@ export const AppRouter = () => {
           <Route exact path="/create-room/step-1" component={Step1} />
           <Route exact path="/create-room/step-2" component={Step2} />
           <Route exact path="/create-room/step-3" component={Step3} />
+
+          <Route exact path="/rooms/:city" component={ScreenSearch} />
+
           
           <Redirect exact to="/" />
         </Switch>

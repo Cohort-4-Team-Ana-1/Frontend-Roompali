@@ -7,6 +7,7 @@ import { RegisterForm } from "./RegisterForm";
 import { FaRegUserCircle } from "react-icons/fa";
 import { RiLoginBoxLine, RiHomeHeartFill, RiMapPinUserFill, RiLogoutBoxRLine } from "react-icons/ri";
 import {IoIosArrowDropleft} from 'react-icons/io'
+import Logo from '../assets/Logo.svg'
 
 export const NavBar = () => {
   const username = sessionStorage.getItem("username");
@@ -17,8 +18,11 @@ export const NavBar = () => {
     <>
       {username ? (
         <nav>
-          <Link to="/">
-            <h2>LOGO</h2>
+          <Link to="/" onClick={() => {
+              localStorage.removeItem('city')
+
+            }}>
+            <img src={Logo} alt=""/>
           </Link>
 
 
@@ -52,10 +56,12 @@ export const NavBar = () => {
 
       ) : (
         <nav>
-          <Link to="/">
-            <h2>LOGO</h2>
-          </Link>
+         <Link to="/" onClick={() => {
+              localStorage.removeItem('city')
 
+            }}>
+            <img src={Logo} alt=""/>
+          </Link>
           
           <div className = "navBar__item">
             <RiLoginBoxLine
