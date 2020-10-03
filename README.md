@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Roompali APP" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/Roompali-logo-elegido.png" width="100">
+    <img alt="Roompali APP" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/logo-roompali.jpg" width="100">
   <br>Roompali APP <br>
 </h1>
 <p align="center"><p>
@@ -74,7 +74,7 @@
 
 | Name                | Link                                                                          |
 | :------------------ | :---------------------------------------------------------------------------- |
-| Doumentation        | https://www.notion.so/Roompali-Documentation-e3e63a0f62b4469db1b509a355c7a483 |
+| Documentation        | https://www.notion.so/Roompali-Documentation-e3e63a0f62b4469db1b509a355c7a483 |
 | Backend Repository  | https://github.com/Cohort-4-Team-Ana-1/Backend-Roompali                       |
 | Roompali APP        | https://frontend-roompali.vercel.app                                          |
 | Roompali API        | https://backend-roompali.vercel.app                                           |
