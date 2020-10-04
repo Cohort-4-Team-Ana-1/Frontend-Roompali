@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginForm/> snapshot to <LoginForm/> 1`] = `
+<div>
+  <div
+    className="modal-body"
+  >
+    <h1>
+      Roompali
+    </h1>
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="form-group"
+      >
+        <label>
+          Nombre de usuario
+          <input
+            autoComplete="off"
+            className="form-control"
+            name="username"
+            onChange={[Function]}
+            placeholder="nombre"
+            type="text"
+            value=""
+          />
+        </label>
+        <label>
+          Correo electrónico
+          <input
+            autoComplete="off"
+            className="form-control"
+            name="email"
+            onChange={[Function]}
+            placeholder="email@gmail.com"
+            type="email"
+            value=""
+          />
+        </label>
+        <label>
+          Contraseña
+          <input
+            className="form-control"
+            name="password"
+            onChange={[Function]}
+            placeholder="*****"
+            type="password"
+            value=""
+          />
+        </label>
+        <button
+          type="submit"
+        >
+          Registrarme
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

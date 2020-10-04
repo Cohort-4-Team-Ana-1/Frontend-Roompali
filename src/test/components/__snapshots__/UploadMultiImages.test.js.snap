@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<UploadMultiImages/> snapshot to <UploadMultiImages/> 1`] = `
+<section
+  className="upload__form"
+>
+  <p>
+    Escoge varias imagenes para que la gente conozca tu cuarto a detalle
+  </p>
+  <form
+    className="upload__singleImage"
+    onSubmit={[Function]}
+  >
+    <input
+      id="multipleImageRoom"
+      multiple={true}
+      name="picture"
+      onChange={[Function]}
+      required="required"
+      type="file"
+    />
+    <label
+      htmlFor="multipleImageRoom"
+    >
+      <img
+        accept="image/*"
+        alt=""
+        className="choose_image"
+        src="default_multiple_pictures.svg"
+        style={
+          Object {
+            "height": "200px",
+            "width": "200px",
+          }
+        }
+      />
+    </label>
+    <button>
+      Submit
+    </button>
+  </form>
+</section>
+`;
