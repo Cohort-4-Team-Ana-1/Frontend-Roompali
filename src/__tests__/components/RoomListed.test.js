@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow  } from 'enzyme';
-import { AppRouter } from '../../routers/AppRouter';
+import { RoomListed } from '../../components/RoomListed';
 import "mutationobserver-shim";
 
 global.MutationObserver = window.MutationObserver;
 
 
-describe('AppRouter testing', () => {
-    test('should render AppRouter', () => {
-        const wrapper = shallow(<AppRouter />);
+describe('RoomListed testing', () => {
+    test('should render RoomListed', () => {
+        const wrapper = shallow(<RoomListed />);
         expect(wrapper.length).toEqual(1);
     })
 })

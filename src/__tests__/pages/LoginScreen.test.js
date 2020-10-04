@@ -1,14 +1,14 @@
 import React from 'react';
 import { shallow  } from 'enzyme';
-import { AppRouter } from '../../routers/AppRouter';
+import { LoginScreen } from '../../pages/LoginScreen';
 import "mutationobserver-shim";
 
 global.MutationObserver = window.MutationObserver;
 
 
-describe('AppRouter testing', () => {
-    test('should render AppRouter', () => {
-        const wrapper = shallow(<AppRouter />);
+describe('ScreenHome testing', () => {
+    test('should render ScreenHome', () => {
+        const wrapper = shallow(<LoginScreen />);
         expect(wrapper.length).toEqual(1);
     })
 })
