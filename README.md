@@ -8,7 +8,6 @@
     <img src="https://img.shields.io/badge/Node sass-5.9.24-blueviolet">
     <img src="https://img.shields.io/badge/axios-0.20.0-black">
     <img src="https://img.shields.io/badge/Slick carousel-1.8.1-lightblue">
-    <img src="https://img.shields.io/badge/Status-In progress-orange">
 </div>
 
 <p align="center">Roompali APP your best tool to find rooms in the most popular cities in Colombia.</p>
