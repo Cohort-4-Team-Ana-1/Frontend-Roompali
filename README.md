@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Roompali APP" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/logo-roompali.jpg" width="100">
+    <img alt="Roompali APP" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/roompali-icon.png" width="100">
   <br>Roompali APP <br>
 </h1>
 <p align="center"><p>
@@ -42,32 +42,32 @@
 
 ### Home
 <div align="center">
-    <img alt="Home" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+    <img alt="Home" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/home.png">
 </div>
 
 ### Sign-up
 
 <div align="center">
-    <img alt="Sign-up" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+    <img alt="Sign-up" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/sign-up.png">
 </div>
 
 
 ### Sign-in
 
 <div align="center">
-    <img alt="Sign-in" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+    <img alt="Sign-in" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/sign-in.png">
 </div>
 
 ### Rol Creation
 
 <div align="center">
-    <img alt="Rol-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+    <img alt="Rol-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/host-creation.png">
 </div>
 
 ### Room Creation
 
 <div align="center">
-    <img alt="Room-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/empty-image.png">
+    <img alt="Room-creation" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/room-creation.png">
 </div>
 
 ## More Information
