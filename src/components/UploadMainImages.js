@@ -8,7 +8,6 @@ export const UploadMainImages = () => {
 
   const onSubmit = async (data) => {
     const formData = new FormData();
-    console.log(data);
     formData.append("image", data.picture[0]);
 
     axios({
@@ -17,8 +16,6 @@ export const UploadMainImages = () => {
       data: formData,
     })
       .then((response) => {
-        // response.json();
-        console.log(response);
         alert("Imagen principal subida");
 
         localStorage.setItem("main_image", response.data.image_url);
@@ -30,8 +27,7 @@ export const UploadMainImages = () => {
         window.location.href = "/create-room/step-2";
       })
       .catch((err) => {
-        console.error(err);
-        console.log(err);
+        // console.error(err);
       });
   };
 
@@ -66,7 +62,7 @@ export const UploadMainImages = () => {
             src={profileImg}
             accept="image/*"
             style={{ width: "200px", height: "200px" }}
-            alt=""
+            alt="default main image"
             className="choose_image"
           />
         </label>

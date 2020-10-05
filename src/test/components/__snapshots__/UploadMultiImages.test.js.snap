@@ -24,7 +24,7 @@ exports[`<UploadMultiImages/> snapshot to <UploadMultiImages/> 1`] = `
     >
       <img
         accept="image/*"
-        alt=""
+        alt="default image"
         className="choose_image"
         src="default_multiple_pictures.svg"
         style={

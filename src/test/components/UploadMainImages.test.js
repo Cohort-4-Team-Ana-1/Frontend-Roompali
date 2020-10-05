@@ -4,10 +4,12 @@ import React from 'react'
 import '@testing-library/jest-dom'
 import { UploadMainImages } from '../../components/UploadMainImages'
 import 'mutationobserver-shim';
+
 global.MutationObserver = window.MutationObserver;
 
 
 describe('<UploadMainImages/>', () => {
+  
 
     const preventDefault = jest.fn()
 

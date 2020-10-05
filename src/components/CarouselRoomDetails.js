@@ -21,7 +21,7 @@ export const CarouselRoomDetails = () => {
       <div id="slider__container">
         <Slider {...settings}>
           {data[1].map((item) => (
-            <img src={item} key={item} alt="" />
+            <img src={item} key={item} alt="room image" />
           ))}
         </Slider>
         <div className="slider__footer">

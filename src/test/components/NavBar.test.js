@@ -5,14 +5,25 @@ import React from 'react'
 import { NavBar } from '../../components/NavBar'
 import '@testing-library/jest-dom'
 
+import Modal from 'react-modal';
+
+
 
 describe('test in <Navbar/>', () => {
 
+
+
+   
+
+
+    const wrapper = shallow(<NavBar/>)
+
     test('should render NavBar', () => {
-        const wrapper = shallow(<NavBar />);
+        const wrapper = shallow(
+                <NavBar />
+                );
         expect(wrapper.length).toEqual(1);
     })
-    const wrapper = shallow(<NavBar/>)
 
     test('show <NavBar/>', () => {
     })
@@ -27,6 +38,11 @@ describe('test in <Navbar/>', () => {
         expect(wrapper.find('img')).toHaveLength(1)
     })
     
-    
+    test('renders react-modal', () => {
+        const wrapper = shallow(<NavBar />);
+        expect(wrapper.find(Modal)).toHaveLength(2);
+      });
+      
+   
     
 })

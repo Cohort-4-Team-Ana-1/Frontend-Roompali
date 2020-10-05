@@ -12,7 +12,6 @@ export const ScreenChooseRol = () => {
     })
       .then((response) => {
         const data = response.data.body;
-        console.log(data);
 
         const found = data.find((e) => user_id === e.user_data);
 
@@ -23,27 +22,24 @@ export const ScreenChooseRol = () => {
           : (window.location.href = "/create-host-rol");
       })
       .catch((err) => {
-        console.error(err);
-        console.log(err);
+        // console.error(err);
       });
   };
 
   return (
     <div>
       <div className="select__choice">
+        <h1>Roompali</h1>
+        <div className="select__options">
+          <p>Bienvenido a Rompali, que deseas hacer hoy?</p>
 
-      <h1>Roompali</h1>
-      <div className = "select__options">
+          <Link to="/">
+            {" "}
+            <button>Buscar una habitacion</button>
+          </Link>
 
-      <p>Bienvenido a Rompali, que deseas hacer hoy?</p>
-      
-      
-        <Link to="/"> <button>Buscar una habitacion</button></Link>
-      
-
-      <button onClick={handleClick}>Publicar una habitacion</button>
-
-      </div>
+          <button onClick={handleClick}>Publicar una habitacion</button>
+        </div>
       </div>
     </div>
   );

@@ -19,8 +19,6 @@ export const UserDetails = () => {
   const data = useFetchUserDetails();
   const roomData = data[0];
   const userData = data[1];
-  console.log(roomData);
-  console.log(userData);
   const iconSize = "2em";
   return (
     <div>
@@ -32,15 +30,19 @@ export const UserDetails = () => {
           </p>
         </div>
         <div className="user-contact">
-          <img className="user-photo" src={userData.user_picture} alt="" />
+          <img
+            className="user-photo"
+            src={userData.user_picture}
+            alt="user picture"
+          />
           <div className="user-rrss">
             <a href={`mailto:${userData.contact_email}`}>
-              <img src={emailIcon} alt="" />
+              <img src={emailIcon} alt="email contact icon" />
             </a>
             <a
               href={`https://wa.me/${userData.whatsapp}?text=Me%20encanto%20tu%20cuarto!!%20Quisiera%20poder%20hablar%20contigo.`}
             >
-              <img src={wpIcon} alt="" />
+              <img src={wpIcon} alt="whatsapp contact icon" />
             </a>
           </div>
           <p>{userData.first_name}</p>

@@ -9,7 +9,6 @@ export const ScreenRoomDetails = () => {
   return (
     <>
       <h3>{roomData.room_name} </h3>
-
       <CarouselRoomDetails />
       <UserDetails />
     </>

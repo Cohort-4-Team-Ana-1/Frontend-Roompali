@@ -13,51 +13,60 @@ export const ScreenFavorites = () => {
     <>
       {username ? (
         <>
-        
-        <h1>Tus habitaciones favoritas</h1>
-        <FavoritesList/>
+          <h1>Tus habitaciones favoritas</h1>
+          <FavoritesList />
         </>
       ) : (
         <>
-          <section className = "select__choice">
-          <h1>Tus favoritos</h1> 
-            <div className = "select__options">
-              <p>Para poder ver esta seccion debes tener una cuenta registrada</p>
+          <section className="select__choice">
+            <h1>Tus favoritos</h1>
+            <div className="select__options">
+              <p>
+                Para poder ver esta seccion debes tener una cuenta registrada
+              </p>
               <div className="select__item">
+                <p>Si aun no tienes cuenta presiona aqui</p>
+                <button onClick={() => setModalRegisterIsOpen(true)}>
+                  Registrarme
+                </button>
 
-              <p>Si aun no tienes cuenta presiona aqui</p>
-              <button onClick={() => setModalRegisterIsOpen(true)}>
-                Registrarme
-              </button>
-
-              <Modal
-              className="Modal"
-              overlayClassName="Overlay"
-                isOpen={modalRegisterIsOpen}
-                onRequestClose={() => setModalRegisterIsOpen(false)}
-              >
-                <RegisterForm />
-                <button className = "exit__button" onClick={() => setModalRegisterIsOpen(false)}><IoIosArrowDropleft size = {"1.5em"} /></button>
-              </Modal>
-                
+                <Modal
+                  className="Modal"
+                  overlayClassName="Overlay"
+                  isOpen={modalRegisterIsOpen}
+                  onRequestClose={() => setModalRegisterIsOpen(false)}
+                >
+                  <RegisterForm />
+                  <button
+                    className="exit__button"
+                    onClick={() => setModalRegisterIsOpen(false)}
+                  >
+                    <IoIosArrowDropleft size={"1.5em"} />
+                  </button>
+                </Modal>
               </div>
-              <div className = "select__item">
+              <div className="select__item">
+                <p> Si ya tienes cuenta presiona aqui</p>
 
+                <button onClick={() => setModalLoginIsOpen(true)}>
+                  Iniciar sesion
+                </button>
 
-              <p> Si ya tienes cuenta presiona aqui</p>
+                <Modal
+                  className="Modal"
+                  overlayClassName="Overlay"
+                  isOpen={modalLoginIsOpen}
+                  onRequestClose={() => setModalLoginIsOpen(false)}
+                >
+                  <LoginForm />
 
-              <button onClick={() => setModalLoginIsOpen(true)}>Iniciar sesion</button>
-
-              <Modal
-              className="Modal"
-              overlayClassName="Overlay"
-                isOpen={modalLoginIsOpen}
-                onRequestClose={() => setModalLoginIsOpen(false)}
-              >
-                <LoginForm />
-
-                <button className = "exit__button" onClick={() => setModalLoginIsOpen(false)}><IoIosArrowDropleft size = {"1.5em"} /></button>
-              </Modal>
+                  <button
+                    className="exit__button"
+                    onClick={() => setModalLoginIsOpen(false)}
+                  >
+                    <IoIosArrowDropleft size={"1.5em"} />
+                  </button>
+                </Modal>
               </div>
             </div>
           </section>

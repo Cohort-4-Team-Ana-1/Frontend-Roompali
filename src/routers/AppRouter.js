@@ -19,7 +19,6 @@ import { ScreenHome } from "../pages/ScreenHome";
 import { ScreenRoomDetails } from "../pages/ScreenRoomDetails";
 import { ScreenSearch } from "../pages/ScreenSearch";
 
-
 export const AppRouter = () => {
   return (
     <Router>
@@ -28,10 +27,18 @@ export const AppRouter = () => {
         <Switch>
           <Route exact path="/" component={ScreenHome} />
           <Route exact path="/favorites" component={ScreenFavorites} />
-          <Route exact path="/room-details/:roomId" component={ScreenRoomDetails} />
+          <Route
+            exact
+            path="/room-details/:roomId"
+            component={ScreenRoomDetails}
+          />
           <Route exact path="/create-room" component={ScreenCreateRoom} />
           <Route exact path="/choose-user-rol" component={ScreenChooseRol} />
-          <Route exact path="/create-host-rol" component={ScreenCreateHostRol} />
+          <Route
+            exact
+            path="/create-host-rol"
+            component={ScreenCreateHostRol}
+          />
 
           <Route exact path="/create-room/step-1" component={Step1} />
           <Route exact path="/create-room/step-2" component={Step2} />
@@ -39,7 +46,6 @@ export const AppRouter = () => {
 
           <Route exact path="/rooms/:city" component={ScreenSearch} />
 
-          
           <Redirect exact to="/" />
         </Switch>
       </>

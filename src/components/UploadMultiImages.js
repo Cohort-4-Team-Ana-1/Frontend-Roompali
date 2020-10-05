@@ -9,10 +9,7 @@ export const UploadMultiImages = () => {
   const onSubmit = async (data) => {
     const formData = new FormData();
     const toArray = Object.values(data.picture);
-    console.log(toArray);
-    // localStorage.setItem('secondary_images', toArray)
     toArray.map((item) => {
-      // console.log(item);
       formData.append("image", item);
     });
     axios({
@@ -21,10 +18,7 @@ export const UploadMultiImages = () => {
       data: formData,
     })
       .then((response) => {
-        // response.json();
         alert("Imagenes del cuarto subidas");
-        console.log(response);
-        console.log(response.data.images_urls);
 
         localStorage.setItem(
           "secondary_images",
@@ -38,8 +32,7 @@ export const UploadMultiImages = () => {
         window.location.href = "/create-room/step-3";
       })
       .catch((err) => {
-        console.error(err);
-        console.log(err);
+        // console.error(err);
       });
   };
 
@@ -77,7 +70,7 @@ export const UploadMultiImages = () => {
             src={profileImg}
             accept="image/*"
             style={{ width: "200px", height: "200px" }}
-            alt=""
+            alt="default image"
             className="choose_image"
           />
         </label>
