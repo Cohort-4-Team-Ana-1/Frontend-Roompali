@@ -25,7 +25,7 @@ export const CarouselRoomDetails = () => {
           ))}
         </Slider>
         <div className="slider__footer">
-          <p>$ {new Intl.NumberFormat("es-CO").format(data[0])} COP / Noche</p>
+          <p>$ {new Intl.NumberFormat("es-CO").format(data[0])} COP / Mensual</p>
         </div>
       </div>
     </>

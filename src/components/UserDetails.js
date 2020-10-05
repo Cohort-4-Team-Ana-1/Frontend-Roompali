@@ -52,7 +52,7 @@ export const UserDetails = () => {
         <h3>Mobiliario del cuarto</h3>
         <p>
           El cuarto cuenta con un área de {roomData.square_meters} mts
-          <sup>2</sup>, y cuenta con el siguiente mobiliario dentro del cuarto:
+          <sup>2</sup>, y el siguiente mobiliario dentro del cuarto:
         </p>
         <div className="room__furnitue__prueba">
           {roomData.bed === true && (
