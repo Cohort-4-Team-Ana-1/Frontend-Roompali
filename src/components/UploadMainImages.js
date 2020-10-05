@@ -8,7 +8,6 @@ export const UploadMainImages = () => {
 
   const onSubmit = async (data) => {
     const formData = new FormData();
-    console.log(data);
     formData.append("image", data.picture[0]);
 
     axios({
@@ -18,7 +17,6 @@ export const UploadMainImages = () => {
     })
       .then((response) => {
         // response.json();
-        console.log(response);
         alert("Imagen principal subida");
 
         localStorage.setItem("main_image", response.data.image_url);

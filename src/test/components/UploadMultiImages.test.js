@@ -6,6 +6,9 @@ import "mutationobserver-shim";
 import { UploadMultiImages } from "../../components/UploadMultiImages";
 global.MutationObserver = window.MutationObserver;
 
+
+
+
 describe("<UploadMultiImages/>", () => {
   const preventDefault = jest.fn();
 

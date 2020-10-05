@@ -6,7 +6,6 @@ import { useFavorites } from '../hooks/useFavorites'
 export const FavoritesList = () => {
 
     const favList = useFavorites()
-    console.log(favList)
 
     return (
         <section className="cards__container">

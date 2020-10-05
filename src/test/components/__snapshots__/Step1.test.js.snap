@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Step1 testing should  1`] = `
+Array [
+  <h1>
+    Creando tu habitación
+  </h1>,
+  <section
+    className="upload__form"
+  >
+    <form
+      className="upload__singleImage"
+      onSubmit={[Function]}
+    >
+      <input
+        id="mainImageRoom"
+        name="picture"
+        onChange={[Function]}
+        required="required"
+        type="file"
+      />
+      <label
+        htmlFor="mainImageRoom"
+      >
+         
+        <img
+          accept="image/*"
+          alt=""
+          className="choose_image"
+          src="default_profile_image.svg"
+          style={
+            Object {
+              "height": "200px",
+              "width": "200px",
+            }
+          }
+        />
+      </label>
+      <button>
+        Submit
+      </button>
+    </form>
+  </section>,
+]
+`;

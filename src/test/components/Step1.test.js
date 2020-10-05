@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow  } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { Step1 } from '../../components/Step1';
 import "mutationobserver-shim";
 
@@ -11,4 +11,12 @@ describe('Step1 testing', () => {
         const wrapper = shallow(<Step1 />);
         expect(wrapper.length).toEqual(1);
     })
+
+    test('should ', () => {
+        const wrapper = mount(
+            <Step1 />
+        );
+        expect( wrapper ).toMatchSnapshot();
+    })
+    
 })

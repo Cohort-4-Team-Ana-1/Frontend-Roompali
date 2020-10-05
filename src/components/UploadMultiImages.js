@@ -9,7 +9,6 @@ export const UploadMultiImages = () => {
   const onSubmit = async (data) => {
     const formData = new FormData();
     const toArray = Object.values(data.picture);
-    console.log(toArray);
     // localStorage.setItem('secondary_images', toArray)
     toArray.map((item) => {
       // console.log(item);
@@ -23,8 +22,7 @@ export const UploadMultiImages = () => {
       .then((response) => {
         // response.json();
         alert("Imagenes del cuarto subidas");
-        console.log(response);
-        console.log(response.data.images_urls);
+
 
         localStorage.setItem(
           "secondary_images",

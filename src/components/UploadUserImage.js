@@ -9,7 +9,6 @@ export const UploadUserImage = () => {
 
   const onSubmit = async (data) => {
     const formData = new FormData();
-    console.log(data);
     formData.append("image", data.picture[0]);
 
     axios({
@@ -19,7 +18,6 @@ export const UploadUserImage = () => {
     })
       .then((response) => {
         alert("Imagen de perfil guardada");
-        console.log(response);
 
         localStorage.setItem("user_picture", response.data.image_url);
         response.data.success === false &&
@@ -29,7 +27,6 @@ export const UploadUserImage = () => {
       })
       .catch((err) => {
         console.error(err);
-        console.log(err);
       });
   };
 

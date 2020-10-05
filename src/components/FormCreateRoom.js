@@ -5,16 +5,12 @@ import axios from "axios";
 export const FormCreateRoom = () => {
   const main_image = localStorage.getItem("main_image");
   const secondary_images = JSON.parse(localStorage.getItem("secondary_images"));
-  console.log(secondary_images);
   const userId = sessionStorage.getItem("user-id");
-  // console.log(secondary_images)
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
-    console.log(errors);
 
     const newData = { ...data, main_image, secondary_images, userId };
-    console.log(JSON.stringify(newData));
+
 
     axios({
       url: "/rooms",
@@ -25,10 +21,9 @@ export const FormCreateRoom = () => {
       data: newData,
     })
       .then((response) => {
-        console.log(response);
+
         alert("Cuarto creado, te redirigimos para que puedas verlo");
         const roomId = response.data.body._id;
-        console.log(roomId);
         sessionStorage.setItem("roomId", roomId);
         window.location.href = `/room-details/${roomId}`;
       })

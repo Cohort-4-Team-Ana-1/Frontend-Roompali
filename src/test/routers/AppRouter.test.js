@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow  } from 'enzyme';
+import { mount, shallow  } from 'enzyme';
 import { AppRouter } from '../../routers/AppRouter';
 import "mutationobserver-shim";
 
@@ -11,4 +11,5 @@ describe('AppRouter testing', () => {
         const wrapper = shallow(<AppRouter />);
         expect(wrapper.length).toEqual(1);
     })
+    
 })
