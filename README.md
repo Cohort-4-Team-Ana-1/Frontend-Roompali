@@ -47,7 +47,7 @@
 ### Sign-up
 
 <div align="center">
-    <img alt="Sign-up" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/sign-up.png">
+    <img alt="Sign-up" src="https://roompali-bucket-s3.s3-us-west-1.amazonaws.com/sign-up-2.png">
 </div>
 
 
