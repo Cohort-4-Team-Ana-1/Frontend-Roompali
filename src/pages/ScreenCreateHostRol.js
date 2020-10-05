@@ -4,15 +4,13 @@ import axios from "axios";
 import { UploadUserImage } from "../components/UploadUserImage";
 
 export const ScreenCreateHostRol = () => {
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit } = useForm();
   const onSubmit = (data) => {
     !localStorage.getItem("user_picture") &&
       alert("Debes guardar la foto antes de continuar");
     const user_picture = localStorage.getItem("user_picture");
     const user_data = sessionStorage.getItem("user-id");
-    console.log(errors);
     const newData = { ...data, user_picture, user_data };
-    console.table(newData);
     axios({
       url: "/roles",
       method: "POST",
@@ -22,11 +20,10 @@ export const ScreenCreateHostRol = () => {
       data: newData,
     })
       .then((response) => {
-        console.log(response);
         window.location.href = "/create-room/step-1";
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
       });
   };
 

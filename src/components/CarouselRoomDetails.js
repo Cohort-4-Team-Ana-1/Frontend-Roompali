@@ -21,11 +21,11 @@ export const CarouselRoomDetails = () => {
       <div id="slider__container">
         <Slider {...settings}>
           {data[1].map((item) => (
-            <img src={item} key={item} alt="" />
+            <img src={item} key={item} alt="room image" />
           ))}
         </Slider>
         <div className="slider__footer">
-          <p>$ {new Intl.NumberFormat("es-CO").format(data[0])} COP / Noche</p>
+          <p>$ {new Intl.NumberFormat("es-CO").format(data[0])} COP / Mensual</p>
         </div>
       </div>
     </>

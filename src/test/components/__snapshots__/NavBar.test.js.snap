@@ -8,7 +8,7 @@ exports[`test in <Navbar/> snapshot to <NavBar/> 1`] = `
       to="/"
     >
       <img
-        alt=""
+        alt="Roompali Logo"
         src="Logo.svg"
       />
     </Link>

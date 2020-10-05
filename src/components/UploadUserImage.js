@@ -26,7 +26,7 @@ export const UploadUserImage = () => {
           );
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
       });
   };
 
@@ -62,7 +62,7 @@ export const UploadUserImage = () => {
             src={profileImg}
             accept="image/*"
             style={{ width: "200px", height: "200px" }}
-            alt=""
+            alt="default user image"
             className="choose_image"
           />
         </label>

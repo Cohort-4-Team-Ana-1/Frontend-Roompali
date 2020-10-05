@@ -21,7 +21,7 @@ exports[`<UploadMainImages/> snapshot to <UploadMainImages/> 1`] = `
        
       <img
         accept="image/*"
-        alt=""
+        alt="default main image"
         className="choose_image"
         src="default_profile_image.svg"
         style={

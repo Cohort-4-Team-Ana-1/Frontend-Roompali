@@ -6,11 +6,17 @@ export const FormCreateRoom = () => {
   const main_image = localStorage.getItem("main_image");
   const secondary_images = JSON.parse(localStorage.getItem("secondary_images"));
   const userId = sessionStorage.getItem("user-id");
+<<<<<<< HEAD
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
 
     const newData = { ...data, main_image, secondary_images, userId };
 
+=======
+  const { register, handleSubmit } = useForm();
+  const onSubmit = (data) => {
+    const newData = { ...data, main_image, secondary_images, userId };
+>>>>>>> 4e5dc40248e28dac0fa96c2b9cf3557640bab9f2
 
     axios({
       url: "/rooms",
@@ -21,14 +27,13 @@ export const FormCreateRoom = () => {
       data: newData,
     })
       .then((response) => {
-
         alert("Cuarto creado, te redirigimos para que puedas verlo");
         const roomId = response.data.body._id;
         sessionStorage.setItem("roomId", roomId);
         window.location.href = `/room-details/${roomId}`;
       })
       .catch((err) => {
-        console.error(err);
+        // console.error(err);
       });
   };
 

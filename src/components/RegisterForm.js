@@ -11,10 +11,6 @@ export const RegisterForm = () => {
 
   const { username, email, password } = formValues;
 
-  useEffect(() => {
-    console.log("email cambió");
-  }, [email]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     const data = {
@@ -32,7 +28,6 @@ export const RegisterForm = () => {
     })
       .then((response) => {
         const datos = response.data;
-        console.log(datos);
         alert(
           "Gracias por registrarte en Roompali, inicia sesion para mejorar tu experiencia"
         );
@@ -47,50 +42,47 @@ export const RegisterForm = () => {
   return (
     <div>
       <div className="modal-body">
-          <h1>Roompali</h1>
+        <h1>Roompali</h1>
         <form onSubmit={handleSubmit}>
-          
           <div className="form-group">
-
             <label>
               Nombre de usuario
-            <input
-              type="text"
-              name="username"
-              className="form-control"
-              placeholder="nombre"
-              autoComplete="off"
-              value={username}
-              onChange={handleInputChange}
-            />
+              <input
+                type="text"
+                name="username"
+                className="form-control"
+                placeholder="nombre"
+                autoComplete="off"
+                value={username}
+                onChange={handleInputChange}
+              />
             </label>
-         
-         <label >Correo electrónico
 
-            <input
-              type="email"
-              name="email"
-              className="form-control"
-              placeholder="email@gmail.com"
-              autoComplete="off"
-              value={email}
-              onChange={handleInputChange}
-            />
-         </label>
-          
-            <label>Contraseña
-         
-            <input
-              type="password"
-              name="password"
-              className="form-control"
-              placeholder="*****"
-              value={password}
-              onChange={handleInputChange}
-            /></label>
-          <button type="submit">
-            Registrarme
-          </button>
+            <label>
+              Correo electrónico
+              <input
+                type="email"
+                name="email"
+                className="form-control"
+                placeholder="email@gmail.com"
+                autoComplete="off"
+                value={email}
+                onChange={handleInputChange}
+              />
+            </label>
+
+            <label>
+              Contraseña
+              <input
+                type="password"
+                name="password"
+                className="form-control"
+                placeholder="*****"
+                value={password}
+                onChange={handleInputChange}
+              />
+            </label>
+            <button type="submit">Registrarme</button>
           </div>
         </form>
       </div>
