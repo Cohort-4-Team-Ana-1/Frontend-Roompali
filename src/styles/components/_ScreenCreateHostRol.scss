@@ -1,0 +1,16 @@
+.upload__userInfo {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  & input {
+    width: 200px;
+    height: 40px;
+    padding-left: 20px;
+    & ::placeholder {
+      color: orangered;
+    }
+  }
+  & button {
+    align-self: center;
+  }
+}

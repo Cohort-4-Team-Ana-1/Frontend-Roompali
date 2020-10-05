@@ -1,0 +1,43 @@
+nav {
+    display: grid;
+    height: 65px;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+    justify-items: center;
+    position: sticky;
+    & :hover{
+        color: $primary;
+    }
+    & img{
+        width: 90%;
+    }
+    & a{
+        text-decoration: none;
+        color: $dark;
+        align-self: center;
+    }
+    
+    & .navBar__item{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        cursor: pointer;
+        align-self: center;
+    }
+    & p{
+        font-size: 10px;
+    }
+}
+.ReactModal__Content{
+    & .exit__button{
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        position: absolute;
+        height: 62px;
+        top: 0;
+        background:none;
+        width: 50px;
+        cursor: pointer;
+    }
+}
