@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow  } from 'enzyme';
 import { RoomListed } from '../../components/RoomListed';
+import mockAxios from 'jest-mock-axios';
 import "mutationobserver-shim";
 
 global.MutationObserver = window.MutationObserver;

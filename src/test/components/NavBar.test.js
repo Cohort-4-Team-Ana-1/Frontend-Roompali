@@ -12,11 +12,7 @@ describe('test in <Navbar/>', () => {
         const wrapper = shallow(<NavBar />);
         expect(wrapper.length).toEqual(1);
     })
-    const wrapper = shallow(<NavBar/>)
 
-    test('show <NavBar/>', () => {
-    })
-    
     test('snapshot to <NavBar/>', () => {
         const wrapper = shallow(<NavBar/>)
 
