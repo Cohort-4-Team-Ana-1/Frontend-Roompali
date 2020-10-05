@@ -48,12 +48,7 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "enzyme-to-json": "^3.6.1",
     "jest-enzyme": "^7.1.2",
-<<<<<<< HEAD
-    "jest-localstorage-mock": "^2.4.3",
-    "jest-mock-axios": "^4.2.1"
-=======
     "jest-localstorage-mock": "^2.4.3"
->>>>>>> 4e5dc40248e28dac0fa96c2b9cf3557640bab9f2
   },
   "author": "",
   "license": "ISC"

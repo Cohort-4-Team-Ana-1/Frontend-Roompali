@@ -10,12 +10,6 @@ import Modal from 'react-modal';
 
 
 describe('test in <Navbar/>', () => {
-
-
-
-   
-
-
     const wrapper = shallow(<NavBar/>)
 
     test('should render NavBar', () => {
