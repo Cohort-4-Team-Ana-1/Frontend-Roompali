@@ -12,7 +12,7 @@ describe('Step1 testing', () => {
         expect(wrapper.length).toEqual(1);
     })
 
-    test('should ', () => {
+    test('should create a snapshot', () => {
         const wrapper = mount(
             <Step1 />
         );

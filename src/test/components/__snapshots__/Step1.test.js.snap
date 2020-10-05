@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Step1 testing should  1`] = `
+exports[`Step1 testing should create a snapshot 1`] = `
 Array [
   <h1>
     Creando tu habitación
@@ -25,7 +25,7 @@ Array [
          
         <img
           accept="image/*"
-          alt=""
+          alt="default main image"
           className="choose_image"
           src="default_profile_image.svg"
           style={
