@@ -1,0 +1,106 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in <Navbar/> snapshot to <NavBar/> 1`] = `
+<Fragment>
+  <nav>
+    <Link
+      onClick={[Function]}
+      to="/"
+    >
+      <img
+        alt="Roompali Logo"
+        src="Logo.svg"
+      />
+    </Link>
+    <div
+      className="navBar__item"
+    >
+      <RiLoginBoxLine
+        onClick={[Function]}
+        size="1.8em"
+      />
+      <p
+        onClick={[Function]}
+      >
+        Login
+      </p>
+      <Modal
+        ariaHideApp={true}
+        bodyOpenClassName="ReactModal__Body--open"
+        className="Modal"
+        closeTimeoutMS={0}
+        isOpen={false}
+        onRequestClose={[Function]}
+        overlayClassName="Overlay"
+        parentSelector={[Function]}
+        portalClassName="ReactModalPortal"
+        role="dialog"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+      >
+        <LoginForm />
+        <button
+          className="exit__button"
+          onClick={[Function]}
+        >
+          <IoIosArrowDropleft
+            size="1.5em"
+          />
+        </button>
+      </Modal>
+    </div>
+    <div
+      className="navBar__item"
+    >
+      <FaRegUserCircle
+        onClick={[Function]}
+        size="1.8em"
+      />
+      <p
+        onClick={[Function]}
+      >
+        Crear cuenta
+      </p>
+      <Modal
+        ariaHideApp={true}
+        bodyOpenClassName="ReactModal__Body--open"
+        className="Modal"
+        closeTimeoutMS={0}
+        isOpen={false}
+        onRequestClose={[Function]}
+        overlayClassName="Overlay"
+        parentSelector={[Function]}
+        portalClassName="ReactModalPortal"
+        role="dialog"
+        shouldCloseOnEsc={true}
+        shouldCloseOnOverlayClick={true}
+        shouldFocusAfterRender={true}
+        shouldReturnFocusAfterClose={true}
+      >
+        <RegisterForm />
+        <button
+          className="exit__button"
+          onClick={[Function]}
+        >
+          <IoIosArrowDropleft
+            size="1.5em"
+          />
+        </button>
+      </Modal>
+    </div>
+    <Link
+      className="navBar__item"
+      to="/favorites"
+    >
+      <RiHomeHeartFill
+        size="1.8em"
+      />
+      <p>
+        Favoritos
+      </p>
+    </Link>
+  </nav>
+</Fragment>
+`;

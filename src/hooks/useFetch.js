@@ -5,22 +5,21 @@ export const useFetch = (url) => {
   const roomId = sessionStorage.getItem("roomId");
 
   const [state, setState] = useState([]);
-  const [secondaryImages, setSecondaryImages] = useState([])
+  const [secondaryImages, setSecondaryImages] = useState([]);
 
   useEffect(() => {
     axios({
       method: "get",
-      url:
-        `https://backend-roompali.vercel.app/api/rooms/${roomId}`,
+      url: `https://backend-roompali.vercel.app/api/rooms/${roomId}`,
     })
       .then(function (response) {
-        const secondary_images_data = response.data.body.secondary_images
-        const price_data = response.data.body.price
-        setState(price_data)
-        setSecondaryImages(secondary_images_data)
+        const secondary_images_data = response.data.body.secondary_images;
+        const price_data = response.data.body.price;
+        setState(price_data);
+        setSecondaryImages(secondary_images_data);
       })
       .catch(function (error) {
-        console.log(error);
+        // console.log(error);
       });
   }, [url]);
 
